@@ -1,0 +1,2051 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- styles -->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/adaptive.css">
+
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+</head>
+<body>
+
+    <div class="rightSideBar">
+		<div class="rightSideBar__nav-top">
+			<div class="rightSideBar__register register-top">
+				<div class="rightSideBar__registerButton button-2">
+					<button 
+						id="closeRegister-top"
+						onclick="
+							document.querySelector('#hideRegister').classList.toggle('hideRegister'),
+							document.querySelector('#hideRegisterBg').classList.toggle('hideRegisterBg'),
+							document.querySelector('#closeRegister-top').classList.toggle('closeRegister-top'),
+							document.querySelector('#overflov-hidden').classList.toggle('overflov-hidden')
+						"
+					></button>
+				</div>
+			</div>
+			<div class="rightSideBar__compare compare-top">
+				<div class="rightSideBar__compareButton button">
+					<button></button>
+				</div>
+				<div class="rightSideBar__compareQuantity quantity">4</div>				
+				<div class="rightSideBar__hideCompare"></div>
+			</div>
+			<div class="rightSideBar__cart cart-top" id="closeCart-top">
+				<div class="rightSideBar__cartButton button">
+					<button 
+						onclick="
+							document.querySelector('#hideCart').classList.toggle('hideCart'),
+							document.querySelector('#hideCartBg').classList.toggle('hideCartBg'),
+							document.querySelector('#closeCart-top').classList.toggle('closeCart-top'),
+							document.querySelector('#overflov-hidden').classList.toggle('overflov-hidden')
+						"
+					></button>
+				</div>
+				<div class="rightSideBar__cartQuantity quantity">155</div>				
+			</div>
+			<div class="rightSideBar__menu menu-top">
+				<div class="rightSideBar__menuButton">
+					<button 
+						id="closeMenu-icon-top"
+						onclick="
+							document.querySelector('#hideMenu').classList.toggle('hideMenu'),
+							document.querySelector('#hideBg').classList.toggle('hideBg'),
+							document.querySelector('#closeMenu-icon-top').classList.toggle('closeMenu-icon-top'),
+							document.querySelector('#overflov-hidden').classList.toggle('overflov-hidden')
+						"
+					></button>
+				</div>				
+			</div>
+			
+			
+			
+		</div>
+		<div class="rightSideBar__nav">
+			<div class="rightSideBar__menu">
+				<div class="rightSideBar__menuButton">
+					<button 
+						id="closeMenu-icon"
+						onclick="
+							document.querySelector('#hideMenu').classList.toggle('hideMenu'),
+							document.querySelector('#hideBg').classList.toggle('hideBg'),
+							document.querySelector('#closeMenu-icon').classList.toggle('closeMenu-icon'),
+							document.querySelector('#overflov-hidden').classList.toggle('overflov-hidden')
+						"
+					></button>
+				</div>				
+			</div>
+			<div class="rightSideBar__cart" id="closeCart">
+				<div class="rightSideBar__cartQuantity quantity">155</div>
+				<div class="rightSideBar__cartButton button">
+					<button 
+						onclick="
+							document.querySelector('#hideCart').classList.toggle('hideCart'),
+							document.querySelector('#hideCartBg').classList.toggle('hideCartBg'),
+							document.querySelector('#closeCart').classList.toggle('closeCart'),
+							document.querySelector('#overflov-hidden').classList.toggle('overflov-hidden')
+						"
+					></button>
+				</div>
+			</div>
+			<div class="rightSideBar__compare">
+				<div class="rightSideBar__compareQuantity quantity">4</div>
+				<div class="rightSideBar__compareButton button">
+					<button></button>
+				</div>
+				<div class="rightSideBar__hideCompare"></div>
+			</div>
+			<div class="rightSideBar__register">
+				<div class="rightSideBar__registerButton button-2">
+					<button 
+						id="closeRegister"
+						onclick="
+							document.querySelector('#hideRegister').classList.toggle('hideRegister'),
+							document.querySelector('#hideRegisterBg').classList.toggle('hideRegisterBg'),
+							document.querySelector('#closeRegister').classList.toggle('closeRegister'),
+						document.querySelector('#overflov-hidden').classList.toggle('overflov-hidden')
+						"
+					></button>
+				</div>
+				<div class="rightSideBar__registerButton-rotate">
+					<button 
+						id="closeRegister-rotate"
+						onclick="
+							document.querySelector('#hideRegister').classList.toggle('hideRegister'),
+							document.querySelector('#hideRegisterBg').classList.toggle('hideRegisterBg'),
+							document.querySelector('#closeRegister-rotate').classList.toggle('closeRegister-rotate'),
+						document.querySelector('#overflov-hidden').classList.toggle('overflov-hidden')
+						"
+					>Вход</button>
+					<button>Регистрация</button>
+				</div>
+			</div>
+			<div class="rightSideBar__number">
+				<div style="display: flex; align-items: center;">
+					<div>
+						<a href="tel:+7 (000) 598-08-48">+7 (000) 598-08-48</a>	
+					</div>
+					<button 
+						class="leftSideBar__openButton" 
+						id="closeNumber"
+						onclick="
+							document.querySelector('#hideNumber').classList.toggle('hideNumber'),
+							document.querySelector('#hideNumberBg').classList.toggle('hideNumberBg'),
+							document.querySelector('#closeNumber').classList.toggle('closeNumber'),
+						document.querySelector('#overflov-hidden').classList.toggle('overflov-hidden')
+						"
+					></button>
+				</div>				
+			</div>
+		</div>	
+		<div class="rightSideBar__pull-outs">
+			<div class="rightSideBar__hideMenu-wp" id="hideMenu">
+				<ul class="menu">
+                    <li>
+                        <a href="#">Test</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Test</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Test</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Test</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Test</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Test</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Test</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Test</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Test</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+			</div>
+
+			<div class="rightSideBar__bg" id="hideBg"></div>
+
+			<div class="rightSideBar__hideCart" id="hideCart">
+				<div class="top">
+					<div class="title">Корзина</div>
+					<a href="#">очистить</a>
+				</div>
+				<div class="items">
+					<div class="items-cart">
+						<div class="image">
+							<img src="img/jpg/cart-1.jpeg" alt="">
+						</div>
+						<div class="right">
+							<div class="description">
+								Крем для глаз The Face Shop Calendula Essential
+							</div>
+							<div class="quantity">
+								<input type="number">
+							</div>
+							<div class="price">924 р.</div>
+						</div>
+					</div>
+					<div class="items-cart">
+						<div class="image">
+							<img src="img/jpg/cart-2.jpeg" alt="">
+						</div>
+						<div class="right">
+							<div class="description">
+								Крем для глаз The Face Shop Calendula Essential
+							</div>
+							<div class="quantity">
+								<input type="number">
+							</div>
+							<div class="price">1894 р.</div>
+						</div>
+					</div>
+					<div class="items-cart">
+						<div class="image">
+							<img src="img/jpg/cart-1.jpeg" alt="">
+						</div>
+						<div class="right">
+							<div class="description">
+								Крем для глаз The Face Shop Calendula Essential
+							</div>
+							<div class="quantity">
+								<input type="number">
+							</div>
+							<div class="price">924 р.</div>
+						</div>
+					</div>
+					<div class="items-cart">
+						<div class="image">
+							<img src="img/jpg/cart-2.jpeg" alt="">
+						</div>
+						<div class="right">
+							<div class="description">
+								Крем для глаз The Face Shop Calendula Essential
+							</div>
+							<div class="quantity">
+								<input type="number">
+							</div>
+							<div class="price">1894 р.</div>
+						</div>
+					</div>
+				</div>
+				<div class="total">
+					<div class="title">Сумма заказа:</div>
+					<div class="price">4 234 р.</div>
+				</div>	
+				<div class="buttons">
+					<a href="#">						
+						<button>Оформить заказ</button>
+					</a>
+					<a href="#">
+						<button>Перейти в корзину ></button>
+					</a>
+				</div>	
+			</div>
+			<div class="rightSideBar__hideCartBg" id="hideCartBg"></div>
+
+			<div class="rightSideBar__hideRegister" id="hideRegister">
+				<div class="title">Вход</div>
+				<form>
+					<input type="text" placeholder="Логин">
+					<input type="password" placeholder="Пароль">
+				</form>
+				<button>Войти</button>
+				<div class="link">
+					<a href="#">Забыли пароль?</a>
+				</div>
+				<div class="link">					
+					<a href="#">Регистрация</a>
+				</div>
+				<div class="socials">
+					<div class="sub-title">Также Вы можете войти через:</div>
+					<div class="social-items">
+						<a href="#"><img src="img/png/icons/icon-1.png" alt=""></a>
+						<a href="#"><img src="img/png/icons/icon-2.png" alt=""></a>	
+						<a href="#"><img src="img/png/icons/icon-3.png" alt=""></a>
+						<a href="#"><img src="img/png/icons/icon-4.png" alt=""></a>
+						<a href="#"><img src="img/png/icons/icon-5.png" alt=""></a>
+						<a href="#"><img src="img/png/icons/icon-6.png" alt=""></a>
+						<a href="#"><img src="img/png/icons/icon-7.png" alt=""></a>
+						<a href="#"><img src="img/png/icons/icon-8.png" alt=""></a>
+					</div>
+				</div>
+				<div class="confirm">
+					Я согласен(на) на обработку моих персональных данных.
+					<a href="#">Подробнее</a>
+				</div>
+			</div>	
+			<div class="rightSideBar__hideRegisterBg" id="hideRegisterBg"></div>
+			
+			<div class="rightSideBar__hideNumber" id="hideNumber">
+				<div class="rightSideBar__open">
+					<div class="rightSideBar__open-content"> 
+						<div class="block">
+							<div class="title">Телефон:</div>
+							<div class="a"><a href="tel:+7 (000) 598-08-48">+7 (000) 598-08-48</a></div>
+							<div class="a"><a href="tel:+7 (000) 598-08-48">+7 (000) 598-08-48</a></div>
+						</div>
+						<div class="block">
+							<div class="title">Адрес:</div>
+							<div class="text">Текстовый адрес компании, пример наполнения</div>
+						</div>
+						<div class="block">
+							<div class="title">E-mail:</div>
+							<div class="text">testpochta@mail.ru</div>
+						</div>
+						<div class="block">
+							<div class="title">Мы в соцсетях</div>
+							<div class="socials">
+								<a href="#"><img src="img/png/social-icons-grey/1.png" alt=""></a>
+								<a href="#"><img src="img/png/social-icons-grey/2.png" alt=""></a>
+								<a href="#"><img src="img/png/social-icons-grey/3.png" alt=""></a>
+								<a href="#"><img src="img/png/social-icons-grey/4.png" alt=""></a>
+								<a href="#"><img src="img/png/social-icons-grey/5.png" alt=""></a>
+							</div>
+						</div>
+					</div>		
+				</div>
+			</div>
+			<div class="rightSideBar__hideNumberBg" id="hideNumberBg"></div>
+
+		</div>
+	</div>
+	
+	<header class="header">
+		<div class="header__top" id="adaptiveSearch">
+			<div class="header__logo">
+				<a href="/">
+					<img src="img/png/logo.png" alt="">
+				</a>
+			</div>
+			<div class="header__search">
+				<input class="searchInput" type="text" placeholder="Поиск по магазину">
+				<div class="header__buttons">
+					<div class="advancedSearch">
+						<div class="hideMenu">
+							<div class="title">Расширенный поиск</div>
+							<div class="block">								
+								<div class="name">Цена (руб.):</div>
+								<div class="inputs">
+									<input class="select-price" type="number" placeholder="От">
+									<input class="select-price" type="number" placeholder="До">
+								</div>								
+							</div>
+							<div class="block">								
+								<div class="name">Название:</div>
+								<div><input type="text"></div>
+							</div>
+							<div class="block">							
+								<div class="name">Артикул:</div>
+								<div><input type="text"></div>
+							</div>
+							<div class="block">								
+								<div class="name">Текст:</div>
+								<div><input type="text"></div>
+							</div>
+							<div class="block">								
+								<div class="name">Выберите категорию:</div>
+								<div>
+									<select>
+										<option>Пункт 1</option>
+										<option>Пункт 2</option>
+									</select>
+								</div>
+							</div>
+							<hr>
+							<div>
+								<button class="button-search" style="margin: 20px 0;">Найти</button>
+							</div>
+						</div>
+					</div>
+					<button class="button-search buttonDisplayNone">Искать</button>
+				</div>
+			</div>
+			<div class="header__nav" id="header__nav-hov">
+				<nav>
+					<li><a href="#" class="danger">% Акция</a></li>
+					<li><a href="#">Доставка</a></li>
+				</nav>
+				
+				<button 
+					class="button-adaptiveSearch"
+					id="adaptiveSearch-hover"
+					onclick="
+						document.querySelector('#adaptiveSearch').classList.toggle('adaptiveSearch'),
+						document.querySelector('#adaptiveSearch-hover').classList.toggle('adaptiveSearch-hover'),
+						document.querySelector('#header__nav-hov').classList.toggle('header__nav-hov')
+					"
+				></button>				
+			</div>
+		</div>		
+		<div class="header__menu-wp">
+			<ul class="menu">
+                <li>
+                    <a href="#">Test</a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Test</a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Test</a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Test</a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Test</a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Test</a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Test</a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Test</a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Test</a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+		</div>	
+	</header>
+	
+	<div class="leftSideBar">
+		<div class="leftSideBar__menu">			
+			<div class="leftSideBar__menu-items">
+				<a href="#">INSTAGRAM</a>
+				<a href="#">FACEBOOK</a>
+				<a href="#">VK</a>
+				<a href="tel:+7 (000) 598-08-48">+7 (000) 598-08-48</a>			
+				<button 
+					class="leftSideBar__openButton" 
+					id="close"
+					onclick="
+						document.querySelector('#active').classList.toggle('active'),
+						document.querySelector('#close').classList.toggle('close'),
+						document.querySelector('#overflov-hidden').classList.toggle('overflov-hidden')
+					"
+				></button>
+			</div>			
+		</div>
+		<div class="leftSideBar__pull-out" id="active">
+			<div class="leftSideBar__bg"></div>
+			<div class="leftSideBar__open">
+				<div class="leftSideBar__open-content"> 
+					<div class="block">
+						<div class="title">Телефон:</div>
+						<div class="a"><a href="tel:+7 (000) 598-08-48">+7 (000) 598-08-48</a></div>
+						<div class="a"><a href="tel:+7 (000) 598-08-48">+7 (000) 598-08-48</a></div>
+					</div>
+					<div class="block">
+						<div class="title">Адрес:</div>
+						<div class="text">Текстовый адрес компании, пример наполнения</div>
+					</div>
+					<div class="block">
+						<div class="title">E-mail:</div>
+						<div class="text">testpochta@mail.ru</div>
+					</div>
+				</div>		
+			</div>	
+		</div>
+	</div>
+	
+	<main>
+		<div class="mainSlider">
+			<div class="mainSlider__background">
+				<img src="img/jpg/header.jpeg" alt="Img">
+			</div>
+			<div class="mainSlider__content">
+				<div class="mainSlider__card">
+					<h1 class="mainSlider__title">
+						Скидки до 25 % наполнение тестовое
+					</h1>
+					<p class="mainSlider__subtitle">
+						Весенние скидки до 50%. Тестовое наполнение блока  с примерным форматированием
+					</p>
+				</div>
+				<button class="mainSlider__button">
+					Подробнее >
+				</button>
+			</div>
+		</div>
+		<div class="advantages">
+			<div class="advantages__box">
+				<div class="advantages__item">
+					<div class="advantages__icon">
+						<img src="img/png/Rectangle.png" alt="О">
+					</div>
+					<div class="advantages__text">
+						<div class="advantages__title">Оплата</div>
+						<div class="advantages__subtitle">онлайн или при получении</div>
+					</div>
+				</div>
+
+				<div class="advantages__item">
+					<div class="advantages__icon">
+						<img src="img/png/Rectangle2.png" alt="Д">
+					</div>
+					<div class="advantages__text">
+						<div class="advantages__title">Доставка</div>
+						<div class="advantages__subtitle">оперативно по всей России</div>
+					</div>
+				</div>
+
+				<div class="advantages__item">
+					<div class="advantages__icon">
+						<img src="img/png/Rectangle3.png" alt="А">
+					</div>
+					<div class="advantages__text">
+						<div class="advantages__title">Ассортимент</div>
+						<div class="advantages__subtitle">более 15 000 наименований товаров </div>
+					</div>
+				</div>
+
+				<div class="advantages__item">
+					<div class="advantages__icon">
+						<img src="img/png/Rectangle4.png" alt="М">
+					</div>
+					<div class="advantages__text">
+						<div class="advantages__title">Гарантия</div>
+						<div class="advantages__subtitle">качества товаров и сервисное обслуживание</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="services">
+			<div class="box services__wrapper">
+				<div class="services__card">
+					<div class="services__image">
+						<img src="img/png/servicesImg.png" alt="Img">
+					</div>
+					<div class="services__item">
+						<ul class="services__menu">
+							<li class="services__link">Кремы</li>
+							<li class="services__link">Сыворотки, эссенции</li>
+							<li class="services__link">Патчи</li>
+							<li class="services__link">Наполнение блока тестовое </li>
+							<li class="services__link">Тестовое наполнение</li>
+							<li class="services__link">Тест</li>
+							<li class="services__link">Пункт меню</li>
+							<li class="services__link">Меню</li>
+							<li class="services__link">Наполнение тестовое</li>
+						</ul>
+					</div>
+					<p class="services__title">
+						Уход за лицом
+					</p>
+				</div>
+				<div class="services__card">
+					<div class="services__image">
+						<img src="img/png/servicesImg2.png" alt="Img">
+					</div>
+					<div class="services__item">
+						<ul class="services__menu">
+							<li class="services__link">Кремы</li>
+							<li class="services__link">Сыворотки, эссенции</li>
+							<li class="services__link">Патчи</li>
+							<li class="services__link">Наполнение блока тестовое </li>
+							<li class="services__link">Тестовое наполнение</li>
+							<li class="services__link">Тест</li>
+							<li class="services__link">Пункт меню</li>
+							<li class="services__link">Меню</li>
+							<li class="services__link">Наполнение тестовое</li>
+						</ul>
+					</div>
+					<p class="services__title">
+						Уход за Телом
+					</p>
+				</div>
+				<div class="services__card">
+					<div class="services__image">
+						<img src="img/png/servicesImg3.png" alt="Img">
+					</div>
+					<div class="services__item">
+						<ul class="services__menu">
+							<li class="services__link">Кремы</li>
+							<li class="services__link">Сыворотки, эссенции</li>
+							<li class="services__link">Патчи</li>
+							<li class="services__link">Наполнение блока тестовое </li>
+							<li class="services__link">Тестовое наполнение</li>
+							<li class="services__link">Тест</li>
+							<li class="services__link">Пункт меню</li>
+							<li class="services__link">Меню</li>
+							<li class="services__link">Наполнение тестовое</li>
+						</ul>
+					</div>
+					<p class="services__title">
+						Уход вокруг глаз
+					</p>
+				</div>
+				<div class="services__card">
+					<div class="services__image">
+						<img src="img/png/servicesImg4.png" alt="Img">
+					</div>
+					<div class="services__item">
+						<ul class="services__menu">
+							<li class="services__link">Кремы</li>
+							<li class="services__link">Сыворотки, эссенции</li>
+							<li class="services__link">Патчи</li>
+							<li class="services__link">Наполнение блока тестовое </li>
+							<li class="services__link">Тестовое наполнение</li>
+							<li class="services__link">Тест</li>
+							<li class="services__link">Пункт меню</li>
+							<li class="services__link">Меню</li>
+							<li class="services__link">Наполнение тестовое</li>
+						</ul>
+					</div>
+					<p class="services__title">
+						Улиточная косметика
+					</p>
+				</div>
+				<div class="services__card">
+					<div class="services__image">
+						<img src="img/png/servicesImg5.png" alt="Img">
+					</div>
+					<div class="services__item">
+						<ul class="services__menu">
+							<li class="services__link">Кремы</li>
+							<li class="services__link">Сыворотки, эссенции</li>
+							<li class="services__link">Патчи</li>
+							<li class="services__link">Наполнение блока тестовое </li>
+							<li class="services__link">Тестовое наполнение</li>
+							<li class="services__link">Тест</li>
+							<li class="services__link">Пункт меню</li>
+							<li class="services__link">Меню</li>
+							<li class="services__link">Наполнение тестовое</li>
+						</ul>
+					</div>
+					<p class="services__title">
+						Для волос
+					</p>
+				</div>
+				<div class="services__card">
+					<div class="services__image">
+						<img src="img/png/servicesImg6.png" alt="Img">
+					</div>
+					<div class="services__item">
+						<ul class="services__menu">
+							<li class="services__link">Кремы</li>
+							<li class="services__link">Сыворотки, эссенции</li>
+							<li class="services__link">Патчи</li>
+							<li class="services__link">Наполнение блока тестовое </li>
+							<li class="services__link">Тестовое наполнение</li>
+							<li class="services__link">Тест</li>
+							<li class="services__link">Пункт меню</li>
+							<li class="services__link">Меню</li>
+							<li class="services__link">Наполнение тестовое</li>
+						</ul>
+					</div>
+					<p class="services__title">
+						Для мужчин
+					</p>
+				</div>
+				<button class="services__button">
+					все категории
+				</button>
+			</div>
+		</div>
+		<div class="popular">
+			<div class="box">
+				<div class="popular__top">
+					<h2 class="popular__title">
+						Популярные товары 
+					</h2>
+					<button class="popular__more">
+						Смотреть все
+					</button>
+				</div>	
+				<div class="hr"></div>
+				<div class="popular__wrapper">
+					<div class="popular__slideButtonPrev-2">‹</div>
+					<div class="popular__slider">
+						<div class="popular__item">
+							<div class="popular__image">
+								<div class="popular__itemHover">
+									<button class="popular__widget"><img src="img/png/widget.png" alt="img"></button>
+									<button class="popular__widget"><img src="img/png/widget2.png" alt="img"></button>
+									<button class="popular__widget"><img src="img/png/widget3.png" alt="img"></button>
+								</div>
+								<img src="img/png/slide.png" alt="Img">
+							</div>
+							<p class="popular__price">924 р.</p>
+							<strike class="popular__sale"><span class="popular__saleText">1555 р.</span></strike>
+							<p class="popular__about">Крем для глаз The Face Shop Calendula Essential Moisture Eye Cream</p>
+						</div>
+						<div class="popular__item">
+							<div class="popular__image">
+								<div class="popular__itemHover">
+									<button class="popular__widget"><img src="img/png/widget.png" alt="img"></button>
+									<button class="popular__widget"><img src="img/png/widget2.png" alt="img"></button>
+									<button class="popular__widget"><img src="img/png/widget3.png" alt="img"></button>
+								</div>
+								<img src="img/png/slide.png" alt="Img">
+							</div>
+							<p class="popular__price">924 р.</p>
+							<strike class="popular__sale"><span class="popular__saleText">1555 р.</span></strike>
+							<p class="popular__about">Крем для глаз The Face Shop Calendula Essential Moisture Eye Cream</p>
+						</div>
+						<div class="popular__item">
+							<div class="popular__image">
+								<div class="popular__itemHover">
+									<button class="popular__widget"><img src="img/png/widget.png" alt="img"></button>
+									<button class="popular__widget"><img src="img/png/widget2.png" alt="img"></button>
+									<button class="popular__widget"><img src="img/png/widget3.png" alt="img"></button>
+								</div>
+								<img src="img/png/slide.png" alt="Img">
+							</div>
+							<p class="popular__price">924 р.</p>
+							<strike class="popular__sale"><span class="popular__saleText">1555 р.</span></strike>
+							<p class="popular__about">Крем для глаз The Face Shop Calendula Essential Moisture Eye Cream</p>
+						</div>
+						<div class="popular__item">
+							<div class="popular__image">
+								<div class="popular__itemHover">
+									<button class="popular__widget"><img src="img/png/widget.png" alt="img"></button>
+									<button class="popular__widget"><img src="img/png/widget2.png" alt="img"></button>
+									<button class="popular__widget"><img src="img/png/widget3.png" alt="img"></button>
+								</div>
+								<img src="img/png/slide.png" alt="Img">
+							</div>
+							<p class="popular__price">924 р.</p>
+							<strike class="popular__sale"><span class="popular__saleText">1555 р.</span></strike>
+							<p class="popular__about">Крем для глаз The Face Shop Calendula Essential Moisture Eye Cream</p>
+						</div>
+						<div class="popular__item">
+							<div class="popular__image">
+								<div class="popular__itemHover">
+									<button class="popular__widget"><img src="img/png/widget.png" alt="img"></button>
+									<button class="popular__widget"><img src="img/png/widget2.png" alt="img"></button>
+									<button class="popular__widget"><img src="img/png/widget3.png" alt="img"></button>
+								</div>
+								<img src="img/png/slide.png" alt="Img">
+							</div>
+							<p class="popular__price">924 р.</p>
+							<strike class="popular__sale"><span class="popular__saleText">1555 р.</span></strike>
+							<p class="popular__about">Крем для глаз The Face Shop Calendula Essential Moisture Eye Cream</p>
+						</div>
+						<div class="popular__item">
+							<div class="popular__image">
+								<div class="popular__itemHover">
+									<button class="popular__widget"><img src="img/png/widget.png" alt="img"></button>
+									<button class="popular__widget"><img src="img/png/widget2.png" alt="img"></button>
+									<button class="popular__widget"><img src="img/png/widget3.png" alt="img"></button>
+								</div>
+								<img src="img/png/slide.png" alt="Img">
+							</div>
+							<p class="popular__price">924 р.</p>
+							<strike class="popular__sale"><span class="popular__saleText">1555 р.</span></strike>
+							<p class="popular__about">Крем для глаз The Face Shop Calendula Essential Moisture Eye Cream</p>
+						</div>
+						<div class="popular__item">
+							<div class="popular__image">
+								<div class="popular__itemHover">
+									<button class="popular__widget"><img src="img/png/widget.png" alt="img"></button>
+									<button class="popular__widget"><img src="img/png/widget2.png" alt="img"></button>
+									<button class="popular__widget"><img src="img/png/widget3.png" alt="img"></button>
+								</div>
+								<img src="img/png/slide.png" alt="Img">
+							</div>
+							<p class="popular__price">924 р.</p>
+							<strike class="popular__sale"><span class="popular__saleText">1555 р.</span></strike>
+							<p class="popular__about">Крем для глаз The Face Shop Calendula Essential Moisture Eye Cream</p>
+						</div>
+						<div class="popular__item">
+							<div class="popular__image">
+								<div class="popular__itemHover">
+									<button class="popular__widget"><img src="img/png/widget.png" alt="img"></button>
+									<button class="popular__widget"><img src="img/png/widget2.png" alt="img"></button>
+									<button class="popular__widget"><img src="img/png/widget3.png" alt="img"></button>
+								</div>
+								<img src="img/png/slide.png" alt="Img">
+							</div>
+							<p class="popular__price">924 р.</p>
+							<strike class="popular__sale"><span class="popular__saleText">1555 р.</span></strike>
+							<p class="popular__about">Крем для глаз The Face Shop Calendula Essential Moisture Eye Cream</p>
+						</div>
+					</div>
+					<div class="popular__slideButtonNext-2">›</div>
+				</div>
+			</div>
+		</div>		
+		<div class="newItems">
+			<div class="box">
+				<div class="newItems__top">
+					<h2 class="newItems__title">
+						Новинки 
+					</h2>
+					<button class="newItems__more">
+						Смотреть все
+					</button>
+				</div>	
+				<div class="hr"></div>
+				<div class="newItems__wrapper">
+					<div class="newItems__slideButtonPrev">‹</div>
+					<div class="newItems__slider">
+						<div class="newItems__item">
+							<div class="newItems__image">
+								<div class="newItems__itemHover">
+									<button class="newItems__widget"><img src="img/png/widget.png" alt="img"></button>
+									<button class="newItems__widget"><img src="img/png/widget2.png" alt="img"></button>
+									<button class="newItems__widget"><img src="img/png/widget3.png" alt="img"></button>
+								</div>
+								<img src="img/png/slide2.png" alt="Img">
+							</div>
+							<p class="newItems__price">924 р.</p>
+							<strike class="newItems__sale"><span class="newItems__saleText">1555 р.</span></strike>
+							<p class="newItems__about">Крем для глаз The Face Shop Calendula Essential Moisture Eye Cream</p>
+						</div>
+						<div class="newItems__item">
+							<div class="newItems__image">
+								<div class="newItems__itemHover">
+									<button class="newItems__widget"><img src="img/png/widget.png" alt="img"></button>
+									<button class="newItems__widget"><img src="img/png/widget2.png" alt="img"></button>
+									<button class="newItems__widget"><img src="img/png/widget3.png" alt="img"></button>
+								</div>
+								<img src="img/png/slide2.png" alt="Img">
+							</div>
+							<p class="newItems__price">924 р.</p>
+							<strike class="newItems__sale"><span class="newItems__saleText">1555 р.</span></strike>
+							<p class="newItems__about">Крем для глаз The Face Shop Calendula Essential Moisture Eye Cream</p>
+						</div>
+						<div class="newItems__item">
+							<div class="newItems__image">
+								<div class="newItems__itemHover">
+									<button class="newItems__widget"><img src="img/png/widget.png" alt="img"></button>
+									<button class="newItems__widget"><img src="img/png/widget2.png" alt="img"></button>
+									<button class="newItems__widget"><img src="img/png/widget3.png" alt="img"></button>
+								</div>
+								<img src="img/png/slide2.png" alt="Img">
+							</div>
+							<p class="newItems__price">924 р.</p>
+							<strike class="newItems__sale"><span class="newItems__saleText">1555 р.</span></strike>
+							<p class="newItems__about">Крем для глаз The Face Shop Calendula Essential Moisture Eye Cream</p>
+						</div>
+						<div class="newItems__item">
+							<div class="newItems__image">
+								<div class="newItems__itemHover">
+									<button class="newItems__widget"><img src="img/png/widget.png" alt="img"></button>
+									<button class="newItems__widget"><img src="img/png/widget2.png" alt="img"></button>
+									<button class="newItems__widget"><img src="img/png/widget3.png" alt="img"></button>
+								</div>
+								<img src="img/png/slide2.png" alt="Img">
+							</div>
+							<p class="newItems__price">924 р.</p>
+							<strike class="newItems__sale"><span class="newItems__saleText">1555 р.</span></strike>
+							<p class="newItems__about">Крем для глаз The Face Shop Calendula Essential Moisture Eye Cream</p>
+						</div>
+						<div class="newItems__item">
+							<div class="newItems__image">
+								<div class="newItems__itemHover">
+									<button class="newItems__widget"><img src="img/png/widget.png" alt="img"></button>
+									<button class="newItems__widget"><img src="img/png/widget2.png" alt="img"></button>
+									<button class="newItems__widget"><img src="img/png/widget3.png" alt="img"></button>
+								</div>
+								<img src="img/png/slide2.png" alt="Img">
+							</div>
+							<p class="newItems__price">924 р.</p>
+							<strike class="newItems__sale"><span class="newItems__saleText">1555 р.</span></strike>
+							<p class="newItems__about">Крем для глаз The Face Shop Calendula Essential Moisture Eye Cream</p>
+						</div>
+						<div class="newItems__item">
+							<div class="newItems__image">
+								<div class="newItems__itemHover">
+									<button class="newItems__widget"><img src="img/png/widget.png" alt="img"></button>
+									<button class="newItems__widget"><img src="img/png/widget2.png" alt="img"></button>
+									<button class="newItems__widget"><img src="img/png/widget3.png" alt="img"></button>
+								</div>
+								<img src="img/png/slide2.png" alt="Img">
+							</div>
+							<p class="newItems__price">924 р.</p>
+							<strike class="newItems__sale"><span class="newItems__saleText">1555 р.</span></strike>
+							<p class="newItems__about">Крем для глаз The Face Shop Calendula Essential Moisture Eye Cream</p>
+						</div>
+						<div class="newItems__item">
+							<div class="newItems__image">
+								<div class="newItems__itemHover">
+									<button class="newItems__widget"><img src="img/png/widget.png" alt="img"></button>
+									<button class="newItems__widget"><img src="img/png/widget2.png" alt="img"></button>
+									<button class="newItems__widget"><img src="img/png/widget3.png" alt="img"></button>
+								</div>
+								<img src="img/png/slide2.png" alt="Img">
+							</div>
+							<p class="newItems__price">924 р.</p>
+							<strike class="newItems__sale"><span class="newItems__saleText">1555 р.</span></strike>
+							<p class="newItems__about">Крем для глаз The Face Shop Calendula Essential Moisture Eye Cream</p>
+						</div>
+						<div class="newItems__item">
+							<div class="newItems__image">
+								<div class="newItems__itemHover">
+									<button class="newItems__widget"><img src="img/png/widget.png" alt="img"></button>
+									<button class="newItems__widget"><img src="img/png/widget2.png" alt="img"></button>
+									<button class="newItems__widget"><img src="img/png/widget3.png" alt="img"></button>
+								</div>
+								<img src="img/png/slide2.png" alt="Img">
+							</div>
+							<p class="newItems__price">924 р.</p>
+							<strike class="newItems__sale"><span class="newItems__saleText">1555 р.</span></strike>
+							<p class="newItems__about">Крем для глаз The Face Shop Calendula Essential Moisture Eye Cream</p>
+						</div>
+						<div class="newItems__item">
+							<div class="newItems__image">
+								<div class="newItems__itemHover">
+									<button class="newItems__widget"><img src="img/png/widget.png" alt="img"></button>
+									<button class="newItems__widget"><img src="img/png/widget2.png" alt="img"></button>
+									<button class="newItems__widget"><img src="img/png/widget3.png" alt="img"></button>
+								</div>
+								<img src="img/png/slide2.png" alt="Img">
+							</div>
+							<p class="newItems__price">924 р.</p>
+							<strike class="newItems__sale"><span class="newItems__saleText">1555 р.</span></strike>
+							<p class="newItems__about">Крем для глаз The Face Shop Calendula Essential Moisture Eye Cream</p>
+						</div>
+						<div class="newItems__item">
+							<div class="newItems__image">
+								<div class="newItems__itemHover">
+									<button class="newItems__widget"><img src="img/png/widget.png" alt="img"></button>
+									<button class="newItems__widget"><img src="img/png/widget2.png" alt="img"></button>
+									<button class="newItems__widget"><img src="img/png/widget3.png" alt="img"></button>
+								</div>
+								<img src="img/png/slide2.png" alt="Img">
+							</div>
+							<p class="newItems__price">924 р.</p>
+							<strike class="newItems__sale"><span class="newItems__saleText">1555 р.</span></strike>
+							<p class="newItems__about">Крем для глаз The Face Shop Calendula Essential Moisture Eye Cream</p>
+						</div>
+						<div class="newItems__item">
+							<div class="newItems__image">
+								<div class="newItems__itemHover">
+									<button class="newItems__widget"><img src="img/png/widget.png" alt="img"></button>
+									<button class="newItems__widget"><img src="img/png/widget2.png" alt="img"></button>
+									<button class="newItems__widget"><img src="img/png/widget3.png" alt="img"></button>
+								</div>
+								<img src="img/png/slide2.png" alt="Img">
+							</div>
+							<p class="newItems__price">924 р.</p>
+							<strike class="newItems__sale"><span class="newItems__saleText">1555 р.</span></strike>
+							<p class="newItems__about">Крем для глаз The Face Shop Calendula Essential Moisture Eye Cream</p>
+						</div>
+					</div>
+					<div class="newItems__slideButtonNext">›</div>
+				</div>	
+			</div>
+		</div>
+		<div class="stock">
+			<div class="stock__box">
+				<div class="stock__image">
+					<img src="img/png/stock-2.png" alt="img">
+				</div>
+				<div class="stock__card">
+					<div class="redBlock"></div>
+					<div class="stock__sliders">
+						<div class="stock__cardSlide">
+							<div class="stock__redText">Акция</div>
+							<h2 class="stock__title">
+								Скидка 15% на всю ухаживающую косметику
+							</h2>
+							<p class="stock__subtitle">
+								Наполнение блока тестовое, с примерным форматированием и отступами
+							</p>
+							<div class="stock__timer">
+								<p class="stock__timerTitle">
+									До конца акции осталось: 
+								</p>
+								<div class="stock__timerClock">
+									<div class="stock__timerItem">
+										<div class="stock__num">01</div>
+										<div class="stock__timerName">дней</div>
+									</div>	
+									<div class="stock__dot">:</div>	
+									<div class="stock__timerItem">
+										<div class="stock__num">120</div>
+										<div class="stock__timerName">часов</div>	
+									</div>
+									<div class="stock__dot">:</div>	
+									<div class="stock__timerItem">
+										<div class="stock__num">50</div>
+										<div class="stock__timerName">минут</div>	
+									</div>
+									<div class="stock__dot">:</div>	
+									<div class="stock__timerItem">
+										<div class="stock__num">36</div>
+										<div class="stock__timerName">секунд</div>	
+									</div>
+								</div>
+							</div>
+						</div>	
+
+						<div class="stock__cardSlide">
+							<div class="stock__redText">Акция</div>
+							<h2 class="stock__title">
+								Скидка 15% на всю ухаживающую косметику
+							</h2>
+							<p class="stock__subtitle">
+								Наполнение блока тестовое, с примерным форматированием и отступами
+							</p>
+							<div class="stock__timer">
+								<p class="stock__timerTitle">
+									До конца акции осталось: 
+								</p>
+								<div class="stock__timerClock">
+									<div class="stock__timerItem">
+										<div class="stock__num">01</div>
+										<div class="stock__timerName">дней</div>
+									</div>	
+									<div class="stock__dot">:</div>	
+									<div class="stock__timerItem">
+										<div class="stock__num">120</div>
+										<div class="stock__timerName">часов</div>	
+									</div>
+									<div class="stock__dot">:</div>	
+									<div class="stock__timerItem">
+										<div class="stock__num">50</div>
+										<div class="stock__timerName">минут</div>	
+									</div>
+									<div class="stock__dot">:</div>	
+									<div class="stock__timerItem">
+										<div class="stock__num">36</div>
+										<div class="stock__timerName">секунд</div>	
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="stock__cardSlide">
+							<div class="stock__redText">Акция</div>
+							<h2 class="stock__title">
+								Скидка 15% на всю ухаживающую косметику
+							</h2>
+							<p class="stock__subtitle">
+								Наполнение блока тестовое, с примерным форматированием и отступами
+							</p>
+							<div class="stock__timer">
+								<p class="stock__timerTitle">
+									До конца акции осталось: 
+								</p>
+								<div class="stock__timerClock">
+									<div class="stock__timerItem">
+										<div class="stock__num">01</div>
+										<div class="stock__timerName">дней</div>
+									</div>	
+									<div class="stock__dot">:</div>	
+									<div class="stock__timerItem">
+										<div class="stock__num">120</div>
+										<div class="stock__timerName">часов</div>	
+									</div>
+									<div class="stock__dot">:</div>	
+									<div class="stock__timerItem">
+										<div class="stock__num">50</div>
+										<div class="stock__timerName">минут</div>	
+									</div>
+									<div class="stock__dot">:</div>	
+									<div class="stock__timerItem">
+										<div class="stock__num">36</div>
+										<div class="stock__timerName">секунд</div>	
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="stock__sldeButtons">
+						<div class="stock__slideButtonPrev">‹</div>
+						<div class="stock__slideButtonNext">›</div>
+					</div>	
+				</div>
+				<button class="stock__button">Подробнее</button>
+			</div>
+		</div>
+		<div class="sponsor">
+			<div class="sponsor__wrapper box">
+				<div class="hr"></div>
+				<div class="sponsor__items">
+					<div class="sponsor__item"><img src="img/png/sponsor.png" alt="Img"></div>
+					<div class="sponsor__item"><img src="img/png/sponsor2.png" alt="Img"></div>
+					<div class="sponsor__item"><img src="img/png/sponsor3.png" alt="Img"></div>
+					<div class="sponsor__item"><img src="img/png/sponsor6.png" alt="Img"></div>
+					<div class="sponsor__item"><img src="img/png/sponsor5.png" alt="Img"></div>
+				</div>
+				<div class="sponsor__hr">
+					<div class="sponsor__slideButtons">
+						<div class="sponsor__slideButtonPrev">‹</div>
+						<div class="sponsor__slideButtonNext">›</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="about">
+			<div class="about__box">
+				<div class="about__image">
+					<img src="img/png/face.png" alt="img">
+				</div>
+
+				<div class="about__card">
+					<div class="blueBlock"></div>
+					<h2 class="about__title">
+						О компании
+					</h2>
+					<p class="about__subtitle">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br/><br/> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+					</p>
+				</div>
+
+
+				<button class="about__button">Подробнее</button>
+
+			</div>
+		</div>
+		<div class="reviews">
+			<div class="box">
+				<div class="reviews__hr">
+					<div class="reviews__img">
+						<img src="img/png/icons/quotes.png" alt='"'>
+					</div>
+				</div>
+				<div class="reviews__top">
+					<h2 class="reviews__title">
+						Отзывы 
+					</h2>
+					<button class="reviews__more">
+						Все отзывы
+					</button>
+				</div>
+				<div comment dialog class="reviews__items">
+					<div class="reviews__item">
+						<div class="reviews__message">
+							<!-- <div class="reviews__messageImage">
+								<img src="img/png/message.png" alt="Img">
+							</div> -->
+							<p class="reviews__textMessage">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+						<div class="reviews__messageData">
+							<div class="reviews__icon">
+								<img src="img/png/quotes.png" alt="Img">
+							</div>
+							<div class="reviews__dataText">
+								<p class="reviews__userName">Лариса Шварц</p>
+								<p class="reviews__data">27.01.20</p>
+							</div>
+						</div>
+					</div>
+					<div class="reviews__item">
+						<div class="reviews__message">
+							<!-- <div class="reviews__messageImage">
+								<img src="img/png/message.png" alt="Img">
+							</div> -->
+							<p class="reviews__textMessage">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+						<div class="reviews__messageData">
+							<div class="reviews__icon">
+								<img src="img/png/quotes.png" alt="Img">
+							</div>
+							<div class="reviews__dataText">
+								<p class="reviews__userName">Лариса Шварц</p>
+								<p class="reviews__data">27.01.20</p>
+							</div>
+						</div>
+					</div>
+					<div class="reviews__item">
+						<div class="reviews__message">
+							<!-- <div class="reviews__messageImage">
+								<img src="img/png/message.png" alt="Img">
+							</div> -->
+							<p class="reviews__textMessage">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+						<div class="reviews__messageData">
+							<div class="reviews__icon">
+								<img src="img/png/quotes.png" alt="Img">
+							</div>
+							<div class="reviews__dataText">
+								<p class="reviews__userName">Лариса Шварц</p>
+								<p class="reviews__data">27.01.20</p>
+							</div>
+						</div>
+					</div>
+					<div class="reviews__item">
+						<div class="reviews__message">
+							<!-- <div class="reviews__messageImage">
+								<img src="img/png/message.png" alt="Img">
+							</div> -->
+							<p class="reviews__textMessage">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+						<div class="reviews__messageData">
+							<div class="reviews__icon">
+								<img src="img/png/quotes.png" alt="Img">
+							</div>
+							<div class="reviews__dataText">
+								<p class="reviews__userName">Лариса Шварц</p>
+								<p class="reviews__data">27.01.20</p>
+							</div>
+						</div>
+					</div>
+					<div class="reviews__item">
+						<div class="reviews__message">
+							<!-- <div class="reviews__messageImage">
+								<img src="img/png/message.png" alt="Img">
+							</div> -->
+							<p class="reviews__textMessage">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+						<div class="reviews__messageData">
+							<div class="reviews__icon">
+								<img src="img/png/quotes.png" alt="Img">
+							</div>
+							<div class="reviews__dataText">
+								<p class="reviews__userName">Лариса Шварц</p>
+								<p class="reviews__data">27.01.20</p>
+							</div>
+						</div>
+					</div>
+					<div class="reviews__item">
+						<div class="reviews__message">
+							<!-- <div class="reviews__messageImage">
+								<img src="img/png/message.png" alt="Img">
+							</div> -->
+							<p class="reviews__textMessage">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+						<div class="reviews__messageData">
+							<div class="reviews__icon">
+								<img src="img/png/quotes.png" alt="Img">
+							</div>
+							<div class="reviews__dataText">
+								<p class="reviews__userName">Лариса Шварц</p>
+								<p class="reviews__data">27.01.20</p>
+							</div>
+						</div>
+					</div>
+					<div class="reviews__item">
+						<div class="reviews__message">
+							<!-- <div class="reviews__messageImage">
+								<img src="img/png/message.png" alt="Img">
+							</div> -->
+							<p class="reviews__textMessage">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+						<div class="reviews__messageData">
+							<div class="reviews__icon">
+								<img src="img/png/quotes.png" alt="Img">
+							</div>
+							<div class="reviews__dataText">
+								<p class="reviews__userName">Лариса Шварц</p>
+								<p class="reviews__data">27.01.20</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="reviews__hr">
+					<div class="reviews__slideButtons">
+						<div class="reviews__slideButtonPrev">‹</div>
+						<div class="reviews__slideButtonNext">›</div>
+					</div>
+				</div>
+			</div>
+		</div>			
+		<div class="articles">
+			<div class="box">
+				<div class="articles__boxTitle">
+					Полезные статьи
+				</div>
+				<div class="hr"></div>
+				<div class="articles__slider">
+					<div class="articles__item">
+						<div class="articles__images">
+							<img src="img/png/articles.png" alt="Img">
+						</div>
+						<div class="articles__text">
+							<p class="articles__title">Силикон для волос: вред или польза?</p>
+							<p class="articles__subtitle">Поговорим о видах силиконов для волос, что они делают в шампунях и уходе, а также, как их правильно смыть.</p>
+						</div>
+					</div>
+					<div class="articles__item">
+						<div class="articles__images">
+							<img src="img/png/articles2.png" alt="Img">
+						</div>
+						<div class="articles__text">
+							<p class="articles__title">Уход за кожей лица после 40 лет</p>
+							<p class="articles__subtitle">Молодость, увы и ах, заканчивается. Именно после 40 лет за кожей нужно максимально тщательно, регулярно и систематично ухаживать. Ни для кого не секрет, что после 35-30 лет уменьшается способность кожи регенерировать клетки, а сальных желез - вырабатывать жир. </p>
+						</div>
+					</div>
+					<div class="articles__item">
+						<div class="articles__images">
+							<img src="img/png/articles.png" alt="Img">
+						</div>
+						<div class="articles__text">
+							<p class="articles__title">Силикон для волос: вред или польза?</p>
+							<p class="articles__subtitle">Поговорим о видах силиконов для волос, что они делают в шампунях и уходе, а также, как их правильно смыть.</p>
+						</div>
+					</div>
+					<div class="articles__item">
+						<div class="articles__images">
+							<img src="img/png/articles2.png" alt="Img">
+						</div>
+						<div class="articles__text">
+							<p class="articles__title">Уход за кожей лица после 40 лет</p>
+							<p class="articles__subtitle">Молодость, увы и ах, заканчивается. Именно после 40 лет за кожей нужно максимально тщательно, регулярно и систематично ухаживать. Ни для кого не секрет, что после 35-30 лет уменьшается способность кожи регенерировать клетки, а сальных желез - вырабатывать жир. </p>
+						</div>
+					</div>
+					<div class="articles__item">
+						<div class="articles__images">
+							<img src="img/png/articles.png" alt="Img">
+						</div>
+						<div class="articles__text">
+							<p class="articles__title">Силикон для волос: вред или польза?</p>
+							<p class="articles__subtitle">Поговорим о видах силиконов для волос, что они делают в шампунях и уходе, а также, как их правильно смыть.</p>
+						</div>
+					</div>
+					<div class="articles__item">
+						<div class="articles__images">
+							<img src="img/png/articles2.png" alt="Img">
+						</div>
+						<div class="articles__text">
+							<p class="articles__title">Уход за кожей лица после 40 лет</p>
+							<p class="articles__subtitle">Молодость, увы и ах, заканчивается. Именно после 40 лет за кожей нужно максимально тщательно, регулярно и систематично ухаживать. Ни для кого не секрет, что после 35-30 лет уменьшается способность кожи регенерировать клетки, а сальных желез - вырабатывать жир. </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="instagram">
+			<div class="box">
+				<div class="instagram__title">
+					<div class="instagram__text">Instagram</div>
+					<div class="instagram__icon"><img src="img/png/instagram.png" alt="I"></div>
+				</div>
+				<div class="instagram__items">
+					<div class="instagram__images"><img src="img/png/instagramIMG.png" alt="Img"></div>
+					<div class="instagram__images"><img src="img/png/instagramIMG2.png" alt="Img"></div>
+					<div class="instagram__images"><img src="img/png/instagramIMG3.png" alt="Img"></div>
+					<div class="instagram__images"><img src="img/png/instagramIMG4.png" alt="Img"></div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+    <footer class="footer">		
+		<div class="footer__submit">
+			<div class="footer__submit-box box">
+				<div class="hr"></div>
+				<div class="footer__submit-title">Подпишись на нашу рассылку</div>
+				<div class="footer__submit-subTitle">Подпишись на нашу рассылку и получи доступ к скидкам до 50% каждую неделю!</div>
+				<div class="footer__submit-form">
+					<input type="text" placeholder="Имя *">
+					<input type="text" placeholder="E-mail *">
+					<button class="footer__submit-button">Подписаться</button>
+				</div>
+			</div>			
+		</div>
+		<div class="footer__main">			
+			<div class="footer__scrollTop">
+				<button class="footer__scrollTop-button" id="scrollTop-button"></button>
+			</div>
+			<div class="footer__box">
+				<div class="footer__row">
+					<div class="footer__column footer__column-menu  footer__column-menu-1">
+						<div class="footer__menu">
+							<ul>
+								<li><a href="#">Главная</a></li>
+								<li><a href="#">О компании</a></li>
+								<li><a href="#">Доставка</a></li>
+								<li><a href="#">Оплата</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__column footer__column-menu  footer__column-menu-2">
+						<div class="footer__menu">
+							<ul>
+								<li><a href="#">Новости</a></li>
+								<li><a href="#">Акция</a></li>
+								<li><a href="#">Адреса</a></li>
+								<li><a href="#">Вопрос-ответ</a></li>
+								<li><a href="#">Отзывы о нас</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__column">
+						<div class="footer__container">
+							<div class="footer__title">Санкт-Петербург</div>
+							<div class="footer__subTitle">Ленинский просп.,151, офис 711</div>
+						</div>
+						<div class="footer__container">
+							<div class="footer__subTitle">Работаем с 10:00 до 22:00</div>
+							<div class="footer__title">8 (000) 000-00-00</div>
+							<div class="footer__title">8 (000) 123-45-67</div>
+						</div>
+						<div class="footer__container">
+							<div class="footer__subTitle">Мы в соцсетях</div>
+							<div class="footer__socials">
+								<a href="#"><img src="img/png/social-icons/1.png" alt=""></a>
+								<a href="#"><img src="img/png/social-icons/2.png" alt=""></a>
+								<a href="#"><img src="img/png/social-icons/3.png" alt=""></a>
+								<a href="#"><img src="img/png/social-icons/4.png" alt=""></a>
+								<a href="#"><img src="img/png/social-icons/5.png" alt=""></a>
+							</div>
+						</div>
+					</div>
+					<div class="footer__column">
+						<div class="footer__container">
+							<div class="footer__title">Способы оплаты</div>
+							<div class="footer__pay">
+								<a href="#"><img src="img/png/icons/9.png" alt=""></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__row">				
+					<div class="footer__copyright">
+						<div class="footer__logo">
+							<a href="/">
+								© 2020 KORU<span>COS</span>
+							</a>
+						</div>
+						<div class="footer__copyright-text">
+							<p>Интернет-магазин</p>
+							<p>Корейской косметики</p>
+						</div>	
+					</div>
+					<div class="footer__sketches">
+						<img src="img/png/footer__sketches.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<!-- scripts -->
+	<script type="text/javascript" src="js/jQuery.js"></script>
+	<script type="text/javascript" src="plugin/slick-1.8.1/slick/slick.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/slider-horizontal.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+				
+
+	<link rel="stylesheet" href="plugin/slick-1.8.1/slick/slick-theme.css
+	">
+	<link rel="stylesheet" href="plugin/slick-1.8.1/slick/slick.css">
+</body>
+</html>

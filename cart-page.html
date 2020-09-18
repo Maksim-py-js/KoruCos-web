@@ -1,0 +1,1333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cart page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- styles -->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/adaptive.css">
+
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+</head>
+<body>
+
+    <div class="rightSideBar">
+		<div class="rightSideBar__nav-top">
+			<div class="rightSideBar__register register-top">
+				<div class="rightSideBar__registerButton button-2">
+					<button 
+						id="closeRegister-top"
+						onclick="
+							document.querySelector('#hideRegister').classList.toggle('hideRegister'),
+							document.querySelector('#hideRegisterBg').classList.toggle('hideRegisterBg'),
+							document.querySelector('#closeRegister-top').classList.toggle('closeRegister-top'),
+							document.querySelector('#overflov-hidden').classList.toggle('overflov-hidden')
+						"
+					></button>
+				</div>
+			</div>
+			<div class="rightSideBar__compare compare-top">
+				<div class="rightSideBar__compareButton button">
+					<button></button>
+				</div>
+				<div class="rightSideBar__compareQuantity quantity">4</div>				
+				<div class="rightSideBar__hideCompare"></div>
+			</div>
+			<div class="rightSideBar__cart cart-top" id="closeCart-top">
+				<div class="rightSideBar__cartButton button">
+					<button 
+						onclick="
+							document.querySelector('#hideCart').classList.toggle('hideCart'),
+							document.querySelector('#hideCartBg').classList.toggle('hideCartBg'),
+							document.querySelector('#closeCart-top').classList.toggle('closeCart-top'),
+							document.querySelector('#overflov-hidden').classList.toggle('overflov-hidden')
+						"
+					></button>
+				</div>
+				<div class="rightSideBar__cartQuantity quantity">155</div>				
+			</div>
+			<div class="rightSideBar__menu menu-top">
+				<div class="rightSideBar__menuButton">
+					<button 
+						id="closeMenu-icon-top"
+						onclick="
+							document.querySelector('#hideMenu').classList.toggle('hideMenu'),
+							document.querySelector('#hideBg').classList.toggle('hideBg'),
+							document.querySelector('#closeMenu-icon-top').classList.toggle('closeMenu-icon-top'),
+							document.querySelector('#overflov-hidden').classList.toggle('overflov-hidden')
+						"
+					></button>
+				</div>				
+			</div>
+			
+			
+			
+		</div>
+		<div class="rightSideBar__nav">
+			<div class="rightSideBar__menu">
+				<div class="rightSideBar__menuButton">
+					<button 
+						id="closeMenu-icon"
+						onclick="
+							document.querySelector('#hideMenu').classList.toggle('hideMenu'),
+							document.querySelector('#hideBg').classList.toggle('hideBg'),
+							document.querySelector('#closeMenu-icon').classList.toggle('closeMenu-icon'),
+							document.querySelector('#overflov-hidden').classList.toggle('overflov-hidden')
+						"
+					></button>
+				</div>				
+			</div>
+			<div class="rightSideBar__cart" id="closeCart">
+				<div class="rightSideBar__cartQuantity quantity">155</div>
+				<div class="rightSideBar__cartButton button">
+					<button 
+						onclick="
+							document.querySelector('#hideCart').classList.toggle('hideCart'),
+							document.querySelector('#hideCartBg').classList.toggle('hideCartBg'),
+							document.querySelector('#closeCart').classList.toggle('closeCart'),
+							document.querySelector('#overflov-hidden').classList.toggle('overflov-hidden')
+						"
+					></button>
+				</div>
+			</div>
+			<div class="rightSideBar__compare">
+				<div class="rightSideBar__compareQuantity quantity">4</div>
+				<div class="rightSideBar__compareButton button">
+					<button></button>
+				</div>
+				<div class="rightSideBar__hideCompare"></div>
+			</div>
+			<div class="rightSideBar__register">
+				<div class="rightSideBar__registerButton button-2">
+					<button 
+						id="closeRegister"
+						onclick="
+							document.querySelector('#hideRegister').classList.toggle('hideRegister'),
+							document.querySelector('#hideRegisterBg').classList.toggle('hideRegisterBg'),
+							document.querySelector('#closeRegister').classList.toggle('closeRegister'),
+						document.querySelector('#overflov-hidden').classList.toggle('overflov-hidden')
+						"
+					></button>
+				</div>
+				<div class="rightSideBar__registerButton-rotate">
+					<button 
+						id="closeRegister-rotate"
+						onclick="
+							document.querySelector('#hideRegister').classList.toggle('hideRegister'),
+							document.querySelector('#hideRegisterBg').classList.toggle('hideRegisterBg'),
+							document.querySelector('#closeRegister-rotate').classList.toggle('closeRegister-rotate'),
+						document.querySelector('#overflov-hidden').classList.toggle('overflov-hidden')
+						"
+					>Вход</button>
+					<button>Регистрация</button>
+				</div>
+			</div>
+			<div class="rightSideBar__number">
+				<div style="display: flex; align-items: center;">
+					<div>
+						<a href="tel:+7 (000) 598-08-48">+7 (000) 598-08-48</a>	
+					</div>
+					<button 
+						class="leftSideBar__openButton" 
+						id="closeNumber"
+						onclick="
+							document.querySelector('#hideNumber').classList.toggle('hideNumber'),
+							document.querySelector('#hideNumberBg').classList.toggle('hideNumberBg'),
+							document.querySelector('#closeNumber').classList.toggle('closeNumber'),
+						document.querySelector('#overflov-hidden').classList.toggle('overflov-hidden')
+						"
+					></button>
+				</div>				
+			</div>
+		</div>	
+		<div class="rightSideBar__pull-outs">
+			<div class="rightSideBar__hideMenu-wp" id="hideMenu">
+				<ul class="menu">
+                    <li>
+                        <a href="#">Test</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Test</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Test</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Test</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Test</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Test</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Test</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Test</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Test</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Test</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+			</div>
+
+			<div class="rightSideBar__bg" id="hideBg"></div>
+
+			<div class="rightSideBar__hideCart" id="hideCart">
+				<div class="top">
+					<div class="title">Корзина</div>
+					<a href="#">очистить</a>
+				</div>
+				<div class="items">
+					<div class="items-cart">
+						<div class="image">
+							<img src="img/jpg/cart-1.jpeg" alt="">
+						</div>
+						<div class="right">
+							<div class="description">
+								Крем для глаз The Face Shop Calendula Essential
+							</div>
+							<div class="quantity">
+								<input type="number">
+							</div>
+							<div class="price">924 р.</div>
+						</div>
+					</div>
+					<div class="items-cart">
+						<div class="image">
+							<img src="img/jpg/cart-2.jpeg" alt="">
+						</div>
+						<div class="right">
+							<div class="description">
+								Крем для глаз The Face Shop Calendula Essential
+							</div>
+							<div class="quantity">
+								<input type="number">
+							</div>
+							<div class="price">1894 р.</div>
+						</div>
+					</div>
+					<div class="items-cart">
+						<div class="image">
+							<img src="img/jpg/cart-1.jpeg" alt="">
+						</div>
+						<div class="right">
+							<div class="description">
+								Крем для глаз The Face Shop Calendula Essential
+							</div>
+							<div class="quantity">
+								<input type="number">
+							</div>
+							<div class="price">924 р.</div>
+						</div>
+					</div>
+					<div class="items-cart">
+						<div class="image">
+							<img src="img/jpg/cart-2.jpeg" alt="">
+						</div>
+						<div class="right">
+							<div class="description">
+								Крем для глаз The Face Shop Calendula Essential
+							</div>
+							<div class="quantity">
+								<input type="number">
+							</div>
+							<div class="price">1894 р.</div>
+						</div>
+					</div>
+				</div>
+				<div class="total">
+					<div class="title">Сумма заказа:</div>
+					<div class="price">4 234 р.</div>
+				</div>	
+				<div class="buttons">
+					<a href="#">						
+						<button>Оформить заказ</button>
+					</a>
+					<a href="#">
+						<button>Перейти в корзину ></button>
+					</a>
+				</div>	
+			</div>
+			<div class="rightSideBar__hideCartBg" id="hideCartBg"></div>
+
+			<div class="rightSideBar__hideRegister" id="hideRegister">
+				<div class="title">Вход</div>
+				<form>
+					<input type="text" placeholder="Логин">
+					<input type="password" placeholder="Пароль">
+				</form>
+				<button>Войти</button>
+				<div class="link">
+					<a href="#">Забыли пароль?</a>
+				</div>
+				<div class="link">					
+					<a href="#">Регистрация</a>
+				</div>
+				<div class="socials">
+					<div class="sub-title">Также Вы можете войти через:</div>
+					<div class="social-items">
+						<a href="#"><img src="img/png/icons/icon-1.png" alt=""></a>
+						<a href="#"><img src="img/png/icons/icon-2.png" alt=""></a>	
+						<a href="#"><img src="img/png/icons/icon-3.png" alt=""></a>
+						<a href="#"><img src="img/png/icons/icon-4.png" alt=""></a>
+						<a href="#"><img src="img/png/icons/icon-5.png" alt=""></a>
+						<a href="#"><img src="img/png/icons/icon-6.png" alt=""></a>
+						<a href="#"><img src="img/png/icons/icon-7.png" alt=""></a>
+						<a href="#"><img src="img/png/icons/icon-8.png" alt=""></a>
+					</div>
+				</div>
+				<div class="confirm">
+					Я согласен(на) на обработку моих персональных данных.
+					<a href="#">Подробнее</a>
+				</div>
+			</div>	
+			<div class="rightSideBar__hideRegisterBg" id="hideRegisterBg"></div>
+			
+			<div class="rightSideBar__hideNumber" id="hideNumber">
+				<div class="rightSideBar__open">
+					<div class="rightSideBar__open-content"> 
+						<div class="block">
+							<div class="title">Телефон:</div>
+							<div class="a"><a href="tel:+7 (000) 598-08-48">+7 (000) 598-08-48</a></div>
+							<div class="a"><a href="tel:+7 (000) 598-08-48">+7 (000) 598-08-48</a></div>
+						</div>
+						<div class="block">
+							<div class="title">Адрес:</div>
+							<div class="text">Текстовый адрес компании, пример наполнения</div>
+						</div>
+						<div class="block">
+							<div class="title">E-mail:</div>
+							<div class="text">testpochta@mail.ru</div>
+						</div>
+						<div class="block">
+							<div class="title">Мы в соцсетях</div>
+							<div class="socials">
+								<a href="#"><img src="img/png/social-icons-grey/1.png" alt=""></a>
+								<a href="#"><img src="img/png/social-icons-grey/2.png" alt=""></a>
+								<a href="#"><img src="img/png/social-icons-grey/3.png" alt=""></a>
+								<a href="#"><img src="img/png/social-icons-grey/4.png" alt=""></a>
+								<a href="#"><img src="img/png/social-icons-grey/5.png" alt=""></a>
+							</div>
+						</div>
+					</div>		
+				</div>
+			</div>
+			<div class="rightSideBar__hideNumberBg" id="hideNumberBg"></div>
+
+		</div>
+	</div>
+	
+	<header class="header">
+		<div class="header__top" id="adaptiveSearch">
+			<div class="header__logo">
+				<a href="/">
+					<img src="img/png/logo.png" alt="">
+				</a>
+			</div>
+			<div class="header__search">
+				<input class="searchInput" type="text" placeholder="Поиск по магазину">
+				<div class="header__buttons">
+					<div class="advancedSearch">
+						<div class="hideMenu">
+							<div class="title">Расширенный поиск</div>
+							<div class="block">								
+								<div class="name">Цена (руб.):</div>
+								<div class="inputs">
+									<input class="select-price" type="number" placeholder="От">
+									<input class="select-price" type="number" placeholder="До">
+								</div>								
+							</div>
+							<div class="block">								
+								<div class="name">Название:</div>
+								<div><input type="text"></div>
+							</div>
+							<div class="block">							
+								<div class="name">Артикул:</div>
+								<div><input type="text"></div>
+							</div>
+							<div class="block">								
+								<div class="name">Текст:</div>
+								<div><input type="text"></div>
+							</div>
+							<div class="block">								
+								<div class="name">Выберите категорию:</div>
+								<div>
+									<select>
+										<option>Пункт 1</option>
+										<option>Пункт 2</option>
+									</select>
+								</div>
+							</div>
+							<hr>
+							<div>
+								<button class="button-search" style="margin: 20px 0;">Найти</button>
+							</div>
+						</div>
+					</div>
+					<button class="button-search buttonDisplayNone">Искать</button>
+				</div>
+			</div>
+			<div class="header__nav" id="header__nav-hov">
+				<nav>
+					<li><a href="#" class="danger">% Акция</a></li>
+					<li><a href="#">Доставка</a></li>
+				</nav>
+				
+				<button 
+					class="button-adaptiveSearch"
+					id="adaptiveSearch-hover"
+					onclick="
+						document.querySelector('#adaptiveSearch').classList.toggle('adaptiveSearch'),
+						document.querySelector('#adaptiveSearch-hover').classList.toggle('adaptiveSearch-hover'),
+						document.querySelector('#header__nav-hov').classList.toggle('header__nav-hov')
+					"
+				></button>				
+			</div>
+		</div>		
+		<div class="header__menu-wp">
+			<ul class="menu">
+                <li>
+                    <a href="#">Test</a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Test</a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Test</a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Test</a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Test</a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Test</a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Test</a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Test</a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Test</a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Test</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+		</div>	
+	</header>
+	
+	<div class="leftSideBar">
+		<div class="leftSideBar__menu">			
+			<div class="leftSideBar__menu-items">
+				<a href="#">INSTAGRAM</a>
+				<a href="#">FACEBOOK</a>
+				<a href="#">VK</a>
+				<a href="tel:+7 (000) 598-08-48">+7 (000) 598-08-48</a>			
+				<button 
+					class="leftSideBar__openButton" 
+					id="close"
+					onclick="
+						document.querySelector('#active').classList.toggle('active'),
+						document.querySelector('#close').classList.toggle('close'),
+						document.querySelector('#overflov-hidden').classList.toggle('overflov-hidden')
+					"
+				></button>
+			</div>			
+		</div>
+		<div class="leftSideBar__pull-out" id="active">
+			<div class="leftSideBar__bg"></div>
+			<div class="leftSideBar__open">
+				<div class="leftSideBar__open-content"> 
+					<div class="block">
+						<div class="title">Телефон:</div>
+						<div class="a"><a href="tel:+7 (000) 598-08-48">+7 (000) 598-08-48</a></div>
+						<div class="a"><a href="tel:+7 (000) 598-08-48">+7 (000) 598-08-48</a></div>
+					</div>
+					<div class="block">
+						<div class="title">Адрес:</div>
+						<div class="text">Текстовый адрес компании, пример наполнения</div>
+					</div>
+					<div class="block">
+						<div class="title">E-mail:</div>
+						<div class="text">testpochta@mail.ru</div>
+					</div>
+				</div>		
+			</div>	
+		</div>
+	</div>
+    
+    <main>
+        <div class="cart">
+            <div class="box">
+                <h2 class="cart__title">Корзина</h2>
+                <div class="hr"></div>
+                <p class="cart__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <ul class="cart__table">
+                    <ul class="cart__rowName">
+                        <ul class="cart__columnItem long">
+                            <strong>Товар</strong>
+                        </ul>
+                        <ul class="cart__columnDiscriptionName">
+                            <li class="cart__columnItem"></li>
+                            <li class="cart__columnItem"><strong>Цена</strong></li>
+                            <li class="cart__columnItem"><strong>кол-во.</strong></li>
+                            <li class="cart__columnItem"><strong>Сумма</strong></li>
+                        </ul>
+                        <ul class="cart__columnBasket">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="21px">
+                                <path fill-rule="evenodd"  fill="rgb(113, 106, 108, 0)" d="M-0.000,4.001 L-0.000,2.001 L5.000,2.001 L5.000,1.981 C5.000,0.888 5.886,0.001 6.980,0.001 L9.020,0.001 C10.113,0.001 11.000,0.888 11.000,1.981 L11.000,2.001 L16.000,2.001 L16.000,4.001 L-0.000,4.001 ZM15.000,18.998 C15.000,20.103 14.105,20.998 13.000,20.998 L3.000,20.998 C1.895,20.998 1.000,20.103 1.000,18.998 L1.000,6.000 L15.000,6.000 L15.000,18.998 ZM13.000,8.000 L11.000,8.000 L11.000,16.998 L9.000,16.998 L9.000,8.000 L7.000,8.000 L7.000,16.998 L5.000,16.998 L5.000,8.000 L3.000,8.000 L3.000,18.998 L13.000,18.998 L13.000,8.000 Z"/>
+                            </svg>
+                        </ul>
+                    </ul>
+                    <ul class="cart__rowProduct">
+                        <ul class="cart__columnItem">
+                            <li class="cart__image">
+                                <img src="img/png/slide.png" alt="">
+                            </li>
+                        </ul>
+                        <ul class="cart__columnDiscription">
+                            <li class="cart__columnItem long">
+                                <p class="cart__poroductText">Микроигольные патчи от синяков под глазами с янтарной кислотой BLOM Microneedle Eye Patches Succinic Acid</p>
+                                <div class="cart__productArticul">
+                                    <strong>Артикул: </strong> 
+                                    <span>0177/409</span>
+                                </div>
+                                <ul class="cart__data">
+                                    <li>
+                                        <span class="cart__dataName">Артикул:</span>
+                                        <span class="cart__dataMean">0177/409</span>
+                                    </li>
+                                    <li>
+                                        <span class="cart__dataName">Бренд:</span>
+                                        <span class="cart__dataMean">Anita</span>
+                                    </li>
+                                    <li>
+                                        <span class="cart__dataName">Страна:</span>
+                                        <span class="cart__dataMean">Южная Корея</span>
+                                    </li>
+                                    <li>
+                                        <span class="cart__dataName">Тип кожи:</span>
+                                        <span class="cart__dataMean">Комбинированная</span>
+                                    </li>
+                                    <li>
+                                        <span class="cart__dataName">Объем:</span>
+                                        <span class="cart__dataMean">1 уп - 4 пары</span>
+                                    </li>
+                                    <li>
+                                        <span class="cart__dataName">Срок годности:</span>
+                                        <span class="cart__dataMean">36 месяцев</span>
+                                    </li>
+                                </ul>
+                                <span class="cart__allOptionsBtn">
+                                    Все параметры
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="8px" height="5px">
+                                    <path fill-rule="evenodd"  fill="rgb(10, 161, 152)" d="M-0.008,1.009 L0.994,0.014 L3.997,3.001 L7.000,0.014 L8.001,1.009 L3.998,5.000 L-0.008,1.009 Z"/>
+                                    </svg>
+                                </span>
+                            </li>
+                            <li class="cart__columnItem">
+                                <span class="cart__itemName"><strong>Цена: </strong></span>
+                                <span> 1 130 р.</span>
+                            </li>
+                            <li class="cart__columnItem">
+                                <span class="cart__itemName"><strong>Кол-во: </strong></span>
+                                <span> Кол-во</span>
+                            </li>
+                            <li class="cart__columnItem">
+                                <span class="cart__itemName"><strong>Сумма: </strong></span>
+                                <span> 1 130 р.</span>
+                            </li>
+                        </ul>
+                        <ul class="cart__columnBasket">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="21px">
+                                <path fill-rule="evenodd"  fill="rgb(113, 106, 108)" d="M-0.000,4.001 L-0.000,2.001 L5.000,2.001 L5.000,1.981 C5.000,0.888 5.886,0.001 6.980,0.001 L9.020,0.001 C10.113,0.001 11.000,0.888 11.000,1.981 L11.000,2.001 L16.000,2.001 L16.000,4.001 L-0.000,4.001 ZM15.000,18.998 C15.000,20.103 14.105,20.998 13.000,20.998 L3.000,20.998 C1.895,20.998 1.000,20.103 1.000,18.998 L1.000,6.000 L15.000,6.000 L15.000,18.998 ZM13.000,8.000 L11.000,8.000 L11.000,16.998 L9.000,16.998 L9.000,8.000 L7.000,8.000 L7.000,16.998 L5.000,16.998 L5.000,8.000 L3.000,8.000 L3.000,18.998 L13.000,18.998 L13.000,8.000 Z"/>
+                            </svg>
+                        </ul>
+                    </ul>
+                </ul>
+                <div class="cart__priceTeg">
+                    <div class="cart__reloadBtn">
+                        Пересчитать
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="13px">
+                            <path fill-rule="evenodd"  fill="rgb(113, 106, 108)" d="M6.571,13.008 C8.567,13.008 10.431,12.125 11.684,10.586 L10.127,9.343 C9.255,10.414 7.959,11.028 6.571,11.028 C4.050,11.028 1.999,8.995 1.999,6.499 C1.999,4.002 4.050,1.971 6.571,1.971 C8.621,1.971 10.338,3.324 10.916,5.167 L8.999,7.066 L13.999,7.066 L13.999,2.115 L12.463,3.636 C11.391,1.481 9.155,-0.009 6.571,-0.009 C2.948,-0.009 -0.000,2.909 -0.000,6.499 C-0.000,10.088 2.948,13.008 6.571,13.008 Z"/>
+                        </svg>
+                    </div>	
+                    <ul class="cart__priceList">
+                        <ul class="row cart__priceItem">
+                            <li class="cart__priceOption">Сумма</li>
+                            <li class="cart__price">1 115 р.</li>
+                        </ul>
+                        <ul class="row cart__priceItem">
+                            <li class="cart__priceOption">Скидка <span class="question">?</span></li>
+                            <li class="cart__price">1 115 р.</li>
+                        </ul>
+                        <ul class="row cart__priceItem">
+                            <li class="cart__priceOption">НДС 20%:</li>
+                            <li class="cart__price">1 115 р.</li>
+                        </ul>
+                        <ul class="row cart__priceItem">
+                            <li class="cart__priceOption">Итог:</li>
+                            <li class="cart__price cart__result">1 115 р.</li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="cart__form box">
+                    <div class="cart__formTitle">
+                        Оформить заказ
+                    </div>
+                    <div class="cart__formBlock">
+                        <div class="cart__formWrapper">
+                            <input type="text" class="cart__formInput" placeholder="Логин">
+                            <input type="text" class="cart__formInput" placeholder="Пароль">
+                            <button class="cart__formButton">
+                                <span class="cart__btnText">Войти и оформить заказ</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19px" height="20px">
+                                    <path fill-rule="evenodd"  opacity="0.851" fill="rgb(255, 255, 255)" d="M17.000,20.000 L6.000,20.000 C4.758,20.000 4.000,19.278 4.000,18.000 L4.000,13.000 L6.000,13.000 L6.000,17.000 C6.000,17.426 6.585,18.000 7.000,18.000 L16.000,18.000 C16.414,18.000 17.000,17.426 17.000,17.000 L17.000,3.000 C17.000,2.574 16.414,2.000 16.000,2.000 L7.000,2.000 C6.585,2.000 6.000,2.574 6.000,3.000 L6.000,7.000 L4.000,7.000 L4.000,2.000 C4.000,0.721 4.758,-0.000 6.000,-0.000 L17.000,-0.000 C18.242,-0.000 19.000,0.721 19.000,2.000 L19.000,18.000 C19.000,19.278 18.242,20.000 17.000,20.000 ZM9.000,7.000 L10.000,6.000 L14.000,10.000 L10.000,14.000 L9.000,13.000 L11.000,11.000 L-0.000,11.000 L-0.000,9.000 L11.000,9.000 L9.000,7.000 Z"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="cart__footer">
+                            <div class="box">
+                                <p class="cart__footerText">
+                                    Для получения персональных и сезонных скидок, а также уникальных предложений предлагаем Вам пройти несложную процедуру <a href="#" class="cart__linkSignUp">Регистрация&nbsp;в&nbsp;магазине</a>
+                                </p>
+                                <button class="cart__btnWithout">Купить без регистрации</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="cart__prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26px" height="10px">
+                    <path fill-rule="evenodd"  fill="#716a6c" d="M26.000,6.000 L4.333,6.000 L7.000,8.000 L6.000,10.000 L-0.007,4.997 L6.000,-0.001 L7.000,2.000 L4.333,4.000 L26.000,4.000 L26.000,6.000 Z" class="prevArrow"/></svg>
+                    <span class="cart__navText">Назад</span>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">		
+		<div class="footer__submit">
+			<div class="footer__submit-box box">
+				<div class="hr"></div>
+				<div class="footer__submit-title">Подпишись на нашу рассылку</div>
+				<div class="footer__submit-subTitle">Подпишись на нашу рассылку и получи доступ к скидкам до 50% каждую неделю!</div>
+				<div class="footer__submit-form">
+					<input type="text" placeholder="Имя *">
+					<input type="text" placeholder="E-mail *">
+					<button class="footer__submit-button">Подписаться</button>
+				</div>
+			</div>			
+		</div>
+		<div class="footer__main">			
+			<div class="footer__scrollTop">
+				<button class="footer__scrollTop-button" id="scrollTop-button"></button>
+			</div>
+			<div class="footer__box">
+				<div class="footer__row">
+					<div class="footer__column footer__column-menu  footer__column-menu-1">
+						<div class="footer__menu">
+							<ul>
+								<li><a href="#">Главная</a></li>
+								<li><a href="#">О компании</a></li>
+								<li><a href="#">Доставка</a></li>
+								<li><a href="#">Оплата</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__column footer__column-menu  footer__column-menu-2">
+						<div class="footer__menu">
+							<ul>
+								<li><a href="#">Новости</a></li>
+								<li><a href="#">Акция</a></li>
+								<li><a href="#">Адреса</a></li>
+								<li><a href="#">Вопрос-ответ</a></li>
+								<li><a href="#">Отзывы о нас</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__column">
+						<div class="footer__container">
+							<div class="footer__title">Санкт-Петербург</div>
+							<div class="footer__subTitle">Ленинский просп.,151, офис 711</div>
+						</div>
+						<div class="footer__container">
+							<div class="footer__subTitle">Работаем с 10:00 до 22:00</div>
+							<div class="footer__title">8 (000) 000-00-00</div>
+							<div class="footer__title">8 (000) 123-45-67</div>
+						</div>
+						<div class="footer__container">
+							<div class="footer__subTitle">Мы в соцсетях</div>
+							<div class="footer__socials">
+								<a href="#"><img src="img/png/social-icons/1.png" alt=""></a>
+								<a href="#"><img src="img/png/social-icons/2.png" alt=""></a>
+								<a href="#"><img src="img/png/social-icons/3.png" alt=""></a>
+								<a href="#"><img src="img/png/social-icons/4.png" alt=""></a>
+								<a href="#"><img src="img/png/social-icons/5.png" alt=""></a>
+							</div>
+						</div>
+					</div>
+					<div class="footer__column">
+						<div class="footer__container">
+							<div class="footer__title">Способы оплаты</div>
+							<div class="footer__pay">
+								<a href="#"><img src="img/png/icons/9.png" alt=""></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__row">				
+					<div class="footer__copyright">
+						<div class="footer__logo">
+							<a href="/">
+								© 2020 KORU<span>COS</span>
+							</a>
+						</div>
+						<div class="footer__copyright-text">
+							<p>Интернет-магазин</p>
+							<p>Корейской косметики</p>
+						</div>	
+					</div>
+					<div class="footer__sketches">
+						<img src="img/png/footer__sketches.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<!-- scripts -->
+	<script type="text/javascript" src="js/jQuery.js"></script>
+	<script type="text/javascript" src="plugin/slick-1.8.1/slick/slick.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/slider-horizontal.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+				
+
+	<link rel="stylesheet" href="plugin/slick-1.8.1/slick/slick-theme.css
+	">
+	<link rel="stylesheet" href="plugin/slick-1.8.1/slick/slick.css">
+</body>
+</html>
