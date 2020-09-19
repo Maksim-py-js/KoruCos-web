@@ -23,7 +23,7 @@ li {
 .box {
     font-size: 0;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1396px;
     width: 100%;
 }
 button, input {
@@ -46,6 +46,13 @@ button, input {
 .blueText {
     color: #0aa198;
 }
+.buttonArrow {
+    text-align: center;
+    background: #0aa198;
+    border-radius: 50%;
+    padding: 0px 6px 1px;
+    display: inline-block;
+}
 .input {
     input {
         font-family: "Montserrat";
@@ -62,6 +69,56 @@ button, input {
     font-size: 14px;
     color: rgba(113, 106, 108, 0.4);
     line-height: 30px;
+}
+.sliderHr {
+    position: relative;
+    text-align: center;
+    background: rgba(113, 106, 108, 0.2);
+    width: 100%;
+    height: 1px;
+    margin-top: 55px;
+}
+
+.sliderDots {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    background: #fff;
+    li.active {
+        vertical-align: middle;
+        margin: 5px;
+        button {
+            background: #0ba29a;
+            height: 14px;
+            width: 14px;
+            padding: 0;  
+            border: 1px solid #0ba29a;
+
+        }
+    }
+    li {
+        vertical-align: middle;
+        margin: 5px;
+        button:before {
+            content: '';
+        }
+        button {
+            background: none;
+            border: 1px solid #716a6c;
+            border-radius: 50%;
+            height: 10px;
+            width: 10px;
+            padding: 0;
+            &:hover {
+                border: 1px solid #0ba29a;
+            }  
+        }
+    }
 }
 #hideNumber.hideNumber,
 #hideNumberBg.hideNumberBg,
@@ -99,22 +156,22 @@ button, input {
     overflow: hidden;
 }
 .header {
-    &__top {
+    &__top {    
         display: flex;
         justify-content: space-between;
         align-items: center;
-        max-width: 1400px;
+        max-width: 1396px;
         margin: 0 auto;
-        padding: 60px 0 0;
+        padding: 61px 0 0;
     }
-    &__print {
+    &__print { // блок изменён
         button {
             margin: 0;
-            padding: 0 0 0 30px;
+            padding: 14px 0 0 30px;
             border: none;
             min-width: 30px;
             min-height: 20px;
-            background: transparent url(../img/png/print.png) no-repeat 0 50% ;
+            background: transparent url(../img/png/print.png) no-repeat 0 94%;
             span {
                 color: #0aa198;
                 font-family: "Montserrat";
@@ -130,6 +187,8 @@ button, input {
         display: flex;
         align-items: center;
         .searchInput {
+            box-sizing: border-box;
+            margin: 0 0 0 42px;
             border: none;
             border-bottom: 1px solid #eae9e9;
             padding: 14px 0 12px 39px;
@@ -140,19 +199,19 @@ button, input {
             font-weight: 400;
             letter-spacing: 0.14px;
             outline: none;
-            width: 560px;
+            width: 608px;
         }        
     }
     &__buttons {
         position: relative;
         display: flex;
-        .advancedSearch {
-            width: 50px;
-            line-height: 38px;
+        margin-top: 1px;
+        .advancedSearch {width: 50px;
             border: none;
             margin-left: -4px;
-            height: 41px;
+            height: 40px;
             background: #716a6c url(../img/png/advancedSearch.png) no-repeat 50% 50%;
+            cursor: pointer;
             cursor: pointer;
             &:hover {
                 background: #716a6c url(../img/png/close.png) no-repeat 50% 50%;
@@ -209,17 +268,16 @@ button, input {
             }
         }
         .button-search {
-            padding: 13px 20px 12px 22px;
+            padding: 15px 20px 9px 22px;
             border: none;
             background: #0aa198;
             color: #fff;
             text-transform: uppercase;
             font-weight: bold;
             font-size: 13px;
-            margin-left: -4px;
             cursor: pointer;
             font-family: "Montserrat";
-            letter-spacing: 0.32px;
+            letter-spacing: 1px;
         }
     }
     &__nav {
@@ -249,7 +307,7 @@ button, input {
                 }
             }
             .danger {
-                padding-right: 20px;
+                padding-right: 15px;
             }
         }
         .button-adaptiveSearch {
@@ -263,7 +321,7 @@ button, input {
         }
     }
     &__menu-wp {
-        margin-top: 65px;
+        margin-top: 61px;
         position: relative;
         display: block;
         &:after {
@@ -1237,7 +1295,7 @@ button, input {
 .mainSlider {
     font-size: 0;
     margin: 0 auto;
-    padding-top: 20px;
+    padding-top: 13px;
     max-width: 1400px;
     width: 100%;
     &__background {
@@ -1254,28 +1312,33 @@ button, input {
         background: #fff;
         max-width: 560px;
         width: 100%;
-        padding: 20px 30px 30px 0;
+        padding: 23px 24px 44px 0;
+        box-sizing: border-box;
     }
     &__title {
+        letter-spacing: 1.2px;
+        font-weight: bold;
+        margin: 20px 0 0 0;
         font-family: "Montserrat";
         font-size: 30px;
         color: #716a6c;
         font-weight: 400;
     }
     &__subtitle {
+        margin-top: 9px;
         opacity: 0.8;
         color: #716a6c;
         font-family: "Montserrat";
         font-size: 15px;
         font-weight: 400;
         line-height: 24px;
-        letter-spacing: 0.3px;
+        letter-spacing: 0px;
     }
     &__button {
         display: inline-block;
         vertical-align: bottom;
         background-color: #0aa198;
-        padding: 20px;
+        padding: 20px 43px;
         color: #fff;
         border: none;
         font-family: "Montserrat";
@@ -1286,11 +1349,11 @@ button, input {
     }
 }
 .advantages {
-    margin: 50px 0;
+    margin: 134px 0 0;
     &__box {
         font-size: 0;
         margin: 0 auto;
-        max-width: 1200px;
+        max-width: 1396px;
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -1302,27 +1365,27 @@ button, input {
         // vertical-align: top;
         display: flex;
         align-items: top;
-        width: calc(100% / 4 - 20px);
-        margin-right: 10px;
+        width: calc(100% / 4 - 40px);
     }
     &__icon {
         // display: inline-block;
         // vertical-align: top;
-        margin-right: 15px;
+        margin-right: 17px;
         img {
             width: 100%;
         }
     }
     &__text {
+        margin-top: 7px;
         // display: inline-block;
         // vertical-align: top;
     }
     &__title {
         color: #716a6c;
         font-family: "Montserrat";
-        font-size: 16px;
+        font-size: 19px;
         font-weight: bold;
-        letter-spacing: 1px;
+        letter-spacing: 1.4px;
     }
     &__subtitle {
         opacity: 0.7;
@@ -1330,13 +1393,17 @@ button, input {
         font-family: "Montserrat";
         font-size: 13px;
         font-weight: 400;
-        line-height: 20px;
+        line-height: 29px;
         letter-spacing: 0.65px;
     }
 }
 .services {
     &__wrapper.box {
-        max-width: 1240px;
+        max-width: 1436px;
+        margin-top: 50px;
+    }
+    .buttonArrow {
+        margin-left: 10px;
     }
     &__title {
         color: #ffffff;
@@ -1345,8 +1412,9 @@ button, input {
         font-weight: normal;
         letter-spacing: 0.21px;
         position: absolute;
-        bottom: 0px;
-        left: 20px;
+        bottom: 2px;
+        left: 34px;
+        margin-right: 10px;
     }
     &__image {
         display: block;
@@ -1373,7 +1441,7 @@ button, input {
     &__item {
         opacity: 0;
         background: rgba(0, 0, 0, 0.8);
-        padding: 10px 20px 20px;
+        padding: 27px 37px 20px;
         box-sizing: border-box;
         position: absolute;
         bottom: 0;
@@ -1410,38 +1478,25 @@ button, input {
         }
     }
     &__button {
-
         display: block;
         width: calc(100% - 40px);
-        margin: 0 auto;
-        padding: 10px 0;
+        margin: 21px auto 0;
+        padding: 20px 0;
         background: none;
         border: 1px solid #f1f1f1;
         text-align: center;
         color: #716a6c;
         font-family: "Montserrat";
         font-size: 14px;
-        font-weight: 400;
+        font-weight: bold;
         text-transform: uppercase;
-        letter-spacing: 0.31px;
-        &:after {
-            content: '›';
-            color: #fff;
-            text-align: center;
-            background: #0aa198;
-            border-radius: 50%;
-            padding: 0px 6px;
-            -webkit-transform: rotate(45deg);
-            -moz-transform: rotate(45deg);
-            -o-transform: rotate(45deg);
-            -ms-transform: rotate(45deg);
-            transform: rotate(45deg);
-        }
+        letter-spacing: 0px;
     }
 }
 .popular {
-    margin-top: 70px;
+    margin-top: 49px;
     &__top {
+        padding: 11px 0;
         display: flex;
         justify-content: space-between;
         align-items:center;
@@ -1463,18 +1518,15 @@ button, input {
         font-weight: 400;
         text-transform: uppercase;
         letter-spacing: 0.7px;
-        &:after {
-            content: '›';
-            color: #fff;
-            text-align: center;
-            background: #0aa198;
-            border-radius: 50%;
-            padding: 0px 6px;
-        }
+    }
+    .buttonArrow {
+        transform: rotate(270deg);   
+        padding: 0 6px 2px;
     }
     &__item {
-        // width: calc(100% / 4 - 20px);
-        margin: 30px 0;
+        width: calc(100% / 4 - 29px);
+        margin: 0 -5px 0 0;
+        display: inline-block;
     }
     &__image {
         position: relative;
@@ -1504,8 +1556,8 @@ button, input {
     &__widget {
         background: none;
         border: 1px solid #fff;
-        height: 30px;
-        width: 30px;
+        height: 39px;
+        width: 39px;
         margin: 5px;
         border-radius: 50%;
         transition: 0.3s;
@@ -1523,7 +1575,7 @@ button, input {
         font-family: "Montserrat";
         font-size: 18px;
         font-weight: 400;
-        margin: 5px 0;
+        margin: 13px 0;
     }
     
     &__sale {
@@ -1531,7 +1583,7 @@ button, input {
         vertical-align: middle;
         opacity: 0.5;
         color: red;
-        margin: 5px 10px;
+        margin: 13px 10px;
     }
     &__saleText {
         color: #716a6c;
@@ -1545,61 +1597,34 @@ button, input {
         font-family: "Montserrat";
         font-size: 15px;
         font-weight: 400;
-        margin: 5px 0;
+        margin: -1px 0 0;
     }
-
 
     .slick-initialized .slick-slide {
         outline: none;
     }
-
     &__slider {
-        display: inline-block;
-        vertical-align: middle;
-        .slick-dots {
-            li.slick-active {
-                vertical-align: middle;
-                margin: 0;
-                button {
-                    background: #0ba29a;
-                    height: 7px;
-                    width: 7px;
-                    border: 1px solid #0ba29a;
-
-                }
-            }
-            li {
-                vertical-align: middle;
-                margin: 0;
-                button:before {
-                    content: '';
-                }
-                button {
-                    background: none;
-                    border: 1px solid #716a6c;
-                    border-radius: 50%;
-                    height: 2px;
-                    width: 2px;
-                }
-            }
-        }
+        display: flex;
+        justify-content: space-between;
+        padding-top: 40px;
     }
     &__wrapper {
         position: relative;
     }
-    &__slideButtonPrev {
+    &__slideButtonPrev-2 {
         position: absolute;
-        top: 30%;
+        top: 40%;
         left: 0;
         z-index: 100;
         cursor: pointer;
         border-radius: 50%;
         display: inline-block;
         font-family: "Montserrat";
-        width: 30px;
-        height: 30px;
+        width: 35px;
+        height: 25px;
+        margin: 50px 2.5px 2.5px -19px;
+        padding: 2px 0 8px;
         text-align: center;
-        margin: 50px 2.5px 2.5px;
         border: 2px solid #0aa198;
         background: transparent;
         color: #0aa198;
@@ -1612,18 +1637,19 @@ button, input {
             transition: 0.1s;
         }  
     }
-    &__slideButtonNext {
+    &__slideButtonNext-2 {
         position: absolute;
-        top: 30%;
+        top: 40%;
         right: 0;
         z-index: 100;
         cursor: pointer;
         border-radius: 50%;
         display: inline-block;
         font-family: "Montserrat";
-        width: 30px;
-        height: 30px;
-        margin: 50px 2.5px 2.5px;
+        width: 35px;
+        height: 25px;
+        margin: 50px -24px 2.5px 2.5px;
+        padding: 2px 0 8px;
         text-align: center;
         border: 2px solid #0aa198;
         background: transparent;
@@ -1639,8 +1665,9 @@ button, input {
     }
 }
 .newItems {
-    margin-top: 70px;
+    margin-top: 49px;
     &__top {
+        padding: 11px 0;
         display: flex;
         justify-content: space-between;
         align-items:center;
@@ -1649,7 +1676,7 @@ button, input {
         color: #716a6c;
         font-family: "Montserrat";
         font-size: 30px;
-        font-weight: 400;
+        font-weight: bold;
         letter-spacing: 0.6px;
         margin: 10px 0;
     }
@@ -1662,23 +1689,15 @@ button, input {
         font-weight: 400;
         text-transform: uppercase;
         letter-spacing: 0.7px;
-        &:after {
-            content: '›';
-            color: #fff;
-            text-align: center;
-            background: #0aa198;
-            border-radius: 50%;
-            padding: 0px 6px;
-        }
     }
-    .hr {
-        background: rgba(113, 106, 108, 0.2);
-        width: 100%;
-        height: 1px;
+    .buttonArrow {
+        transform: rotate(270deg);   
+        padding: 0 6px 2px;
     }
     &__item {
-        width: calc(100% / 4 - 20px);
-        margin: 30px 0;
+        width: calc(100% / 4 - 29px);
+        margin: 0 -5px 0 0;
+        display: inline-block;
     }
     &__image {
         position: relative;
@@ -1708,8 +1727,8 @@ button, input {
     &__widget {
         background: none;
         border: 1px solid #fff;
-        height: 30px;
-        width: 30px;
+        height: 39px;
+        width: 39px;
         margin: 5px;
         border-radius: 50%;
         transition: 0.3s;
@@ -1727,7 +1746,7 @@ button, input {
         font-family: "Montserrat";
         font-size: 18px;
         font-weight: 400;
-        margin: 5px 0;
+        margin: 13px 0;
     }
     
     &__sale {
@@ -1735,7 +1754,7 @@ button, input {
         vertical-align: middle;
         opacity: 0.5;
         color: red;
-        margin: 5px 10px;
+        margin: 13px 10px;
     }
     &__saleText {
         color: #716a6c;
@@ -1749,95 +1768,84 @@ button, input {
         font-family: "Montserrat";
         font-size: 15px;
         font-weight: 400;
-        margin: 5px 0;
+        margin: -1px 0 0;
     }
-
 
     .slick-initialized .slick-slide {
         outline: none;
     }
+    &__hr {
+        position: relative;
+        text-align: center;
+        background: rgba(113, 106, 108, 0.2);
+        width: 100%;
+        height: 1px;
+        margin-top: 55px;
+    }
 
-    &__slider {
-        .slick-dots {
-            li.slick-active {
-                vertical-align: middle;
-                margin: 0;
-                button {
-                    background: #0ba29a;
-                    height: 7px;
-                    width: 7px;
+    &__slideDots {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: auto;
+        background: #fff;
+        li.active {
+            vertical-align: middle;
+            margin: 5px;
+            button {
+                background: #0ba29a;
+                height: 14px;
+                width: 14px;
+                padding: 0;  
+                border: 1px solid #0ba29a;
+
+            }
+        }
+        li {
+            vertical-align: middle;
+            margin: 5px;
+            button:before {
+                content: '';
+            }
+            button {
+                background: none;
+                border: 1px solid #716a6c;
+                border-radius: 50%;
+                height: 10px;
+                width: 10px;
+                padding: 0;
+                &:hover {
                     border: 1px solid #0ba29a;
-
-                }
-            }
-            li {
-                vertical-align: middle;
-                margin: 0;
-                button:before {
-                    content: '';
-                }
-                button {
-                    background: none;
-                    border: 1px solid #716a6c;
-                    border-radius: 50%;
-                    height: 5px;
-                    width: 5px;
-                }
+                }  
             }
         }
-        .slick-prev {
-            border-radius: 50%;
-            width: 30px;
-            height: 30px;
-            text-align: center;
-            padding: 0 0 10px;
-            border: 2px solid #716a6c;
-            &:before {
-                content: '‹';
-                color: #716a6c;
-            }
-            &:hover {
-                border: 2px solid #0aa198;
-                .slick-prev:before {
-                    color: #0aa198;
-                }
-            } 
-        }
-        .slick-next {
-            border-radius: 50%;
-            width: 30px;
-            height: 30px;
-            text-align: center;
-            padding: 0 0 10px;
-            border: 2px solid #716a6c;
-            &:before {
-                content: '›';
-                color: #716a6c;
-            }
-            &:hover {
-                border: 2px solid #0aa198;
-                .slick-prev:before {
-                    color: #0aa198;
-                }
-            } 
-        }
+    }
+    &__slider {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 40px;
     }
     &__wrapper {
         position: relative;
     }
-    &__slideButtonPrev {
+    &__slideButtonPrev-2 {
         position: absolute;
-        top: 30%;
+        top: 40%;
         left: 0;
         z-index: 100;
         cursor: pointer;
         border-radius: 50%;
         display: inline-block;
         font-family: "Montserrat";
-        width: 30px;
-        height: 30px;
+        width: 35px;
+        height: 25px;
+        margin: 50px 2.5px 2.5px -19px;
+        padding: 2px 0 8px;
         text-align: center;
-        margin: 50px 2.5px 2.5px;
         border: 2px solid #0aa198;
         background: transparent;
         color: #0aa198;
@@ -1850,18 +1858,19 @@ button, input {
             transition: 0.1s;
         }  
     }
-    &__slideButtonNext {
+    &__slideButtonNext-2 {
         position: absolute;
-        top: 30%;
+        top: 40%;
         right: 0;
         z-index: 100;
         cursor: pointer;
         border-radius: 50%;
         display: inline-block;
         font-family: "Montserrat";
-        width: 30px;
-        height: 30px;
-        margin: 50px 2.5px 2.5px;
+        width: 35px;
+        height: 25px;
+        margin: 50px -24px 2.5px 2.5px;
+        padding: 2px 0 8px;
         text-align: center;
         border: 2px solid #0aa198;
         background: transparent;
@@ -1877,7 +1886,7 @@ button, input {
     }
 }
 .about {
-    margin: 100px 0 50px;
+    margin: 111px 0 42px;
     display: block;
     &__box {
         font-size: 0;
@@ -1885,8 +1894,8 @@ button, input {
         max-width: 1200px;
         width: 100%;
         display: grid;
-        grid-template-columns: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5%;
-        grid-template-rows: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5%;
+        grid-template-columns: repeat(100, 1%);
+        grid-template-rows: repeat(100, 1%);
     }
     .blueBlock {
         position: absolute;
@@ -1899,9 +1908,9 @@ button, input {
     }
     &__image {
         grid-row-start: 1;
-        grid-row-end: 10;
-        grid-column-start: 2;
-        grid-column-end: 12;
+        grid-row-end: 60;
+        grid-column-start: 3;
+        grid-column-end: 60;
         img {
             width: 100%;
         }
@@ -1909,19 +1918,18 @@ button, input {
     &__card {
         position: relative;
         background: #fff;
-        padding: 30px 30px 100px;
-
-        grid-row-start: 4;
-        grid-row-end: 20;
-        grid-column-start: 9;
-        grid-column-end: 20;
+        padding: 20px 4px 100px 40px;
+        grid-row-start: 16;
+        grid-row-end: 100;
+        grid-column-start: 43;
+        grid-column-end: 100;
     }
     &__title {
         color: #716a6c;
         font-family: "Montserrat";
-        font-size: 35px;
+        font-size: 29px;
         font-weight: bold;
-        line-height: 40px;
+        line-height: 14px;
         letter-spacing: 0.7px;
     }
     &__subtitle {
@@ -1932,11 +1940,10 @@ button, input {
         letter-spacing: 0.32px;
     }
     &__button {
-        grid-row-start: 14;
-        grid-row-end: 12;
-        grid-column-start: 7;
-        grid-column-end: 9;
-
+        grid-row-start: 81;
+        grid-row-end: 91;
+        grid-column-start: 27;
+        grid-column-end: 43;
         background-color: #0aa198;
         padding: 20px;
         color: #fff;
@@ -1949,7 +1956,7 @@ button, input {
     }
 }
 .stock {
-    margin: 100px 0;
+    margin: 101px 0 0;
     .slick-initialized .slick-slide {
         outline: none;
     }
@@ -1959,14 +1966,14 @@ button, input {
         max-width: 1200px;
         width: 100%;
         display: grid;
-        grid-template-columns: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5%;
-        grid-template-rows: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5%;
+        grid-template-columns: repeat(100, 1%);
+        grid-template-rows: repeat(100, 1%);
     }
     &__image {
         grid-row-start: 1;
-        grid-row-end: 10;
-        grid-column-start: 9;
-        grid-column-end: 20;
+        grid-row-end: 60;
+        grid-column-start: 43;
+        grid-column-end: 100;
         img {
             width: 100%;
         }
@@ -1991,10 +1998,10 @@ button, input {
         background: #fff;
         padding: 30px 30px 100px;
 
-        grid-row-start: 4;
-        grid-row-end: 20;
-        grid-column-start: 2;
-        grid-column-end: 12;
+        grid-row-start: 14;
+        grid-row-end: 100;
+        grid-column-start: 3;
+        grid-column-end: 60;
     }
     &__redText {
         color: #d87171;
@@ -2003,6 +2010,7 @@ button, input {
         font-weight: bold;
         text-transform: uppercase;
         letter-spacing: 0.7px;
+        margin: 6px 0 0 8px;
     }
     &__title {
         color: #716a6c;
@@ -2011,7 +2019,7 @@ button, input {
         font-weight: bold;
         line-height: 40px;
         letter-spacing: 0.7px;
-        margin: 30px 0 20px;
+        margin: 32px 0 20px 9px;
     }
     &__subtitle {
         color: #716a6c;
@@ -2019,24 +2027,25 @@ button, input {
         font-weight: normal;
         font-size: 16px;
         letter-spacing: 0.32px;
-        margin: 10px 0;
+        margin: 10px 0 0 9px;
     }
     &__timerClock {
         max-width: 420px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-left: 10px;
     }
     &__timerItem {
         border-radius: 50%;
-        height: 57px;
-        width: 70px;
-        padding-top: 13px;
+        height: 65px;
+        width: 87px;
+        padding-top: 22px;
         border: 1px solid rgba(113, 106, 108, 0.15);
         text-align: center;
     }
     &__timerTitle {
-        margin: 50px 0 30px 0;
+        margin: 40px 0 14px 9px;
         color: #716a6c;
         font-family: "Montserrat";
         font-size: 18px;
@@ -2066,10 +2075,10 @@ button, input {
         letter-spacing: 0.4px;
     }
     &__button {
-        grid-row-start: 15;
-        grid-row-end: 13;
-        grid-column-start: 12;
-        grid-column-end: 15;
+        grid-row-start: 69;
+        grid-row-end: 78;
+        grid-column-start: 60;
+        grid-column-end: 75;
 
         background-color: #d87171;
         padding: 20px;
@@ -2087,10 +2096,11 @@ button, input {
         border-radius: 50%;
         display: inline-block;
         font-family: "Montserrat";
-        width: 30px;
-        height: 30px;
+        width: 35px;
+        height: 25px;
+        margin: 50px -24px 2.5px 2.5px;
+        padding: 2px 0 8px;
         text-align: center;
-        margin: 50px 2.5px 2.5px;
         border: 2px solid #716a6c;
         color: #716a6c;
         font-size: 22px;
@@ -2105,9 +2115,10 @@ button, input {
         border-radius: 50%;
         display: inline-block;
         font-family: "Montserrat";
-        width: 30px;
-        height: 30px;
-        margin: 50px 2.5px 2.5px;
+        width: 35px;
+        height: 25px;
+        margin: 0 0 0 33px;
+        padding: 2px 0 8px;
         text-align: center;
         border: 2px solid #716a6c;
         color: #716a6c;
@@ -2124,7 +2135,7 @@ button, input {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 30px 0;
+        padding: 30px 0 46px;
         min-width: 100px;
     }
     &__item {
@@ -2230,11 +2241,11 @@ button, input {
     }
     &__img {
         background: #fff;
-        max-width: 40px;
+        max-width: 61px;
         width: 100%;
         position: absolute;
-        left: 10%;
-        transform:translate(-70%, -50%);
+        left: 12%;
+        transform: translate(-75%, -50%);
         img {
             width: 100%;
         }
@@ -2244,13 +2255,17 @@ button, input {
         justify-content: space-between;
         align-items:center;
     }
+    .buttonArrow {
+        transform: rotate(270deg);   
+        padding: 0 6px 2px;
+    }
     &__title {
         color: #716a6c;
         font-family: "Montserrat";
         font-size: 30px;
         font-weight: bold;
         letter-spacing: 0.6px;
-        margin: 10px 0;
+        margin: 28px 0;
     }
     &__more {
         background: none;
@@ -2261,14 +2276,7 @@ button, input {
         font-weight: 400;
         text-transform: uppercase;
         letter-spacing: 0.7px;
-        &:after {
-            content: '›';
-            color: #fff;
-            text-align: center;
-            background: #0aa198;
-            border-radius: 50%;
-            padding: 0px 6px;
-        }
+        margin-top: 15px;
     }
 
     &__hr {
@@ -2277,7 +2285,7 @@ button, input {
         background: rgba(113, 106, 108, 0.2);
         width: 100%;
         height: 1px;
-        margin-top: 20px;
+        margin-top: 40px;
     }
     &__slideButtons {
         position: absolute;
@@ -2335,6 +2343,7 @@ button, input {
         display: flex;
         justify-content: space-between;
         align-items: start;
+        padding-bottom: 16px;
     }
     &__item {
         width: calc(100% / 3 - 20px);
@@ -2345,18 +2354,7 @@ button, input {
         background: #fff;
         padding: 20px;
         border: 1px solid rgba(113, 106, 108, 0.2);
-        // &:after {
-        //     content: '';
-        //     display: block;
-        //     position: absolute;
-        //     width: 0;
-        //     height: 0;
-        //     border-left: 5px solid transparent;
-        //     border-right: 10px solid transparent;
-        //     border-top: 20px solid white;
-        //     left: 15px;
-        //     bottom: -12px;
-        // }
+        min-height: 190px;
     }
     &__messageImage {
         z-index: -1;
@@ -2376,7 +2374,7 @@ button, input {
     }
     &__messageData {
         display: flex;
-        margin-top: 10px;
+        margin-top: 35px;
     }
     &__userName {
         margin: 0;
@@ -2403,14 +2401,14 @@ button, input {
     }
 }
 .articles {
-    margin-top: 100px;
+    margin-top: 83px;
     &__boxTitle {
         text-align: center;
         color: #716a6c;
         font-family: "Montserrat";
         font-size: 30px;
         font-weight: bold;
-        margin-bottom: 20px;
+        margin-bottom: 22px;
         letter-spacing: 0.6px;
     }
 
@@ -2419,8 +2417,9 @@ button, input {
     }
     &__slider {
         margin-top: 50px;
-        display: inline-block;
-        vertical-align: middle;
+        padding-bottom: 38px;
+        display: flex;
+        justify-content: space-between;
         .slick-dots {
             bottom: -100px;
             li.slick-active {
@@ -2452,9 +2451,10 @@ button, input {
     }
     &__item {
         position: relative;
+        width: calc(100% / 2 - 20px);
     }
     &__images {
-        max-width: 360px;
+        max-width: 440px;
         width: 100%;
         img {
             width: 100%;
@@ -2463,21 +2463,21 @@ button, input {
     &__text {
         display: block;
         position: absolute;
-        left: 50%;
-        top: 50%;
-
-        padding: 10px 20px;
+        left: 49%;
+        top: 39%;
+        padding: 15px 25px;
         max-width: 360px;
         width: 100%;
+        height: 100%;
         background: #fff;
         transform: matrix(1, 0, 0, 1, -90, -20);
     }
     &__title {
         color: #716a6c;
         font-family: "Montserrat";
-        font-size: 16px;
+        font-size: 18px;
         font-weight: bold;
-        letter-spacing: 0.6px;
+        letter-spacing: 1.6px;
     }
     &__subtitle {
         opacity: 0.7;
@@ -2492,7 +2492,7 @@ button, input {
 
 }
 .instagram {
-    margin: 130px 0;
+    margin: 71px 0 89px;
     &__title {
         display: flex;
         align-items: center;
@@ -2502,16 +2502,17 @@ button, input {
         color: #716a6c;
         font-family: "Montserrat";
         font-size: 30px;
-        font-weight: 400;
-        letter-spacing: 0.27px;
-        margin-right: 10px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        margin-right: 12px;
     }
     &__items {
+        margin-top: 32px;
         display: flex;
         justify-content: space-between;
     }
     &__images {
-        width: calc(100% / 4 - 20px);
+        width: calc(100% / 4 - 27px);
         img {
             width: 100%;
         }
@@ -2527,11 +2528,11 @@ button, input {
             text-align: center;
         }
         &-title {
-            margin-top: 68px;
+            margin-top: 59px;
             color: #716a6c;
             font-family: "Montserrat";
             font-size: 30px;
-            font-weight: 400;
+            font-weight: bold;
             letter-spacing: 0.6px;
         }
         &-subTitle {
@@ -2541,9 +2542,11 @@ button, input {
             font-size: 15px;
             font-weight: 400;
             line-height: 20px;
+            margin-top: 10px;
+            letter-spacing: 0.2px;
         }
         &-form {
-            margin-top: 37px;
+            margin-top: 33px;
             input,
             button {
                 border: 1px solid rgba(113, 106, 108, 0.2);
@@ -2551,20 +2554,19 @@ button, input {
                 margin: 0 10px;
             }
             input {
-                width: 198px;
-                padding: 20px 0 19px 22px;
+                width: 199px;
+                padding: 16px 0px 18px 22px;
             }
             button {
-                width: 198px;
+                width: 223px;
                 background-color: #0aa198;
-                padding: 20px 0 19px 0;
+                padding: 16px 0px 14px;
                 color: #ffffff;
                 font-family: "Montserrat";
                 font-size: 14px;
                 font-weight: 400;
                 text-transform: uppercase;
                 letter-spacing: 0.7px;
-    
             }
         }
     }
@@ -2588,7 +2590,7 @@ button, input {
         }
     }
     &__box {
-        padding: 100px 0;
+        padding: 93px 0;
         font-size: 0;
         margin: 0 auto;
         max-width: 1402px;
@@ -2597,11 +2599,16 @@ button, input {
     &__row {
         display: flex;
         position: relative;
+        margin-top: 5px;
     }
     &__column {
         width: 25%;
         border-left: 1px solid #6cc7c1;
         padding-left: 21px;
+        margin-right: 44px;
+        &:last-child {
+            margin-right: 0;
+        }
     }
     &__menu {
         ul {
@@ -2609,7 +2616,7 @@ button, input {
             margin: 0;
             li {
                 list-style: none;
-                margin-bottom: 23px;
+                margin-bottom: 20px;
                 a {
                     color: #ffffff;
                     font-family: "Montserrat";
@@ -3824,14 +3831,14 @@ display: none;
     width: 100%;
     max-width: 1400px;
     margin: 0 auto 110px;
-    &__title {
+    &__title { // блок изменён
         color: #716a6c;
         font-family: "Montserrat";
         font-size: 30px;
         font-weight: bold;
         letter-spacing: 0.6px;
-        margin-top: 49px;
-        margin-bottom: 22px;
+        margin-top: 38px;
+        margin-bottom: 38px;
     }
     &__tabs {        
         display: block;
@@ -3865,14 +3872,14 @@ display: none;
             font-weight: bold;
             text-transform: uppercase;
             letter-spacing: 0.7px;
-            &:after {
+            &:after { // блок изменён
                 content: "";
                 width: calc(100% + 42px);
                 height: 2px;
                 background: #0aa198;
                 display: block;
                 opacity: 0;
-                margin-top: 20px;
+                margin-top: 13px;
                 visibility: hidden;
                 transition: all .3s ease;
             }
@@ -3918,15 +3925,15 @@ display: none;
     &__box {
         overflow: auto;   
         display: block;   
-        &-item {
+        &-item { // блок изменён
             width: 240px;
             color: #716a6c;
             font-family: "Montserrat";
             font-size: 15px;
             font-weight: bold;
             line-height: 20px;
-            padding-top: 19px;
-            padding-bottom: 17px;
+            padding-top: 13px;
+            padding-bottom: 15px;
             .name {
                 width: 100%;
                 max-width: 155px;
@@ -3958,15 +3965,16 @@ display: none;
         }
     }
     &__product-cart {
-        &-box {
+        &-box { // блок изменён
             width: 240px;
-            margin-top: 19px;
-            padding-bottom: 17px;
+            margin-top: 13px;
+            padding-bottom: 15px;
             position: relative;
-            .image {
+            .image {  // блок изменён
                 object-fit: cover;
                 object-position: 50% 50%;
-                margin-bottom: 16px;
+                margin-bottom: 9px;
+                padding-top: 6px;
                 img {
                     width: 80px;
                     height: 80px;
@@ -3989,10 +3997,10 @@ display: none;
                     color: #0aa198;
                 }
             }
-            .delete-btn {
+            .delete-btn {  // блок изменён
                 position: absolute;
                 top: 0;
-                right: 40px;
+                right: 45px;
                 button {
                     width: 30px;
                     height: 30px;
@@ -4014,7 +4022,7 @@ display: none;
 .thanks-for-order {
     width: 100%;
     max-width: 1400px;
-    margin: 67px auto 120px;
+    margin: 55px auto 100px;
     display: flex;
     justify-content: space-between;
     &__left {
@@ -4026,11 +4034,10 @@ display: none;
             letter-spacing: 0.6px;
             margin-bottom: 15px;
         }
-        &-text {
+        &-text { // блок изменён
             color: #716a6c;
             font-family: "Montserrat";
             font-size: 20px;
-            font-weight: bold;
             line-height: 30px;
             width: 100%;
             max-width: 540px;
@@ -4060,7 +4067,7 @@ display: none;
             }
         }
     }
-    &__right {
+    &__right { // блок изменён
         width: 100%;
         height: 100%;
         max-width: 360px;
@@ -4068,17 +4075,26 @@ display: none;
         font-family: "Montserrat";
         font-size: 16px;
         line-height: 20px;
-        padding: 36px 80px 46px 30px;
+        padding: 29px 69px 46px 30px;
         border: 1px solid #eae9e9;
+        p:first-child {
+            span {
+                padding-left: 3px;
+            }
+        }
         p {
-            margin-top: 15px;   
+            margin-top: 11px; 
+            padding-left: 2px;  
+            margin-bottom: 0;
         }
         span {
             font-size: 20px;
             font-weight: bold;
+            padding-left: 6px;
+            
         }
         .price {
-            margin-top: 36px;
+            margin-top: 25px;
         }
     }
 }
@@ -4098,7 +4114,8 @@ display: none;
             line-height: 28px;
             padding-top: 40px;
             border-top: 1px solid #eae9e9; 
-
+            margin-left: 20px;
+            margin-right: 20px;  
             a {
                 color: #716a6c;
                 text-decoration: none;
@@ -4111,14 +4128,18 @@ display: none;
         font-size: 30px;
         font-weight: bold;
         letter-spacing: 0.6px;
-        padding-bottom: 35px;
         border-bottom: 1px solid #eae9e9; 
+        margin: 0 20px; 
+        padding-top: 12px;
+        padding-bottom: 32px;
+        padding: 12px 0 32px 0;
     }
     &__filters {
         padding-top: 25px;
         display: flex;
         justify-content: space-between; 
-        margin-bottom: 55px;       
+        padding-left: 20px;
+        padding-right: 20px;     
     }              
     &__dropdowns {
         display: flex; 
@@ -4376,7 +4397,7 @@ display: none;
     }
     &__item {
         width: 320px;
-        margin: 30px 0;
+        margin: 20px 0 30px;
         border: 1px solid transparent;
         padding: 15px;
         &:hover {
@@ -4387,11 +4408,11 @@ display: none;
     &__row-page-item {
         width: 100%;
         max-width: 663px;
-        margin: 30px 0;
+        margin: 7px 0 0 ;
         display: flex;
         justify-content: space-between;
         border: 1px solid transparent;
-        padding: 20px 30px 30px 20px;
+        padding: 24px 30px 22px 20px;
         &:hover {
             border: 1px solid rgba(113, 106, 108, 0.2);
             cursor: pointer;
@@ -4454,7 +4475,7 @@ display: none;
     }
     &__data {
         display: none;
-        margin: 15px 0;
+        margin: 8px 0 7px;
         li {
             padding: 5px 0;
         }
@@ -4491,20 +4512,21 @@ display: none;
             width: 100%;
         }
 
-        &-salePercent {
+        &-salePercent { // блок изменён
             position: absolute;
-            top: 0;
-            left: 0;
+            top: 10px;
+            left: 10px;
             color: #ffffff;
             font-family: "Montserrat";
             font-size: 18px;
             font-weight: 400;
             background-color: #d87171;
             border-radius: 50%;
-            width: 60px;
-            height: 40px;
+            width: 50px;
+            height: 34px;
+            padding-top: 16px;
             text-align: center;
-            padding-top: 20px;
+            vertical-align: middle;
         }
         &-label {
             position: absolute;
@@ -4520,14 +4542,13 @@ display: none;
         }
         &-labelText {
             text-align: center;
-            padding: 5px 0;
+            padding: 3px 0;
             width: 49px;
             color: #ffffff;
             font-family: "Montserrat";
             font-size: 11px;
             font-weight: 400;
             text-transform: uppercase;
-            // transform: rotate(90deg);
         }
     }
     &__itemHover {
@@ -4546,8 +4567,8 @@ display: none;
     &__widget {
         background: none;
         border: 1px solid #fff;
-        height: 30px;
-        width: 30px;
+        height: 40px;
+        width: 40px;
         margin: 5px;
         border-radius: 50%;
         transition: 0.3s;
@@ -4555,6 +4576,10 @@ display: none;
             background: #0aa198;
             border: 1px solid #0aa198;
             transition: 0.1s;
+        }
+        img {
+            width: 20px;
+            height: 19px;
         }
     }
     &__description {
@@ -4578,21 +4603,21 @@ display: none;
         font-family: "Montserrat";
         font-size: 18px;
         font-weight: bold;
-        margin: 5px 0;
+        margin: 10px 0 5px;
     }  
     &__sale-2 {
         display: none;
         vertical-align: middle;
         opacity: 0.5;
         color: red;
-        margin: 5px 10px;
+        margin: 10px 10px 5px 10px;
     }  
     &__sale {
         display: inline-block;
         vertical-align: middle;
         opacity: 0.5;
         color: red;
-        margin: 5px 10px;
+        margin: 10px 10px 5px 10px;
     }
     &__saleText {
         color: #716a6c;
@@ -4611,7 +4636,7 @@ display: none;
     &__comparison {
         display: none;
         align-items: center;
-        margin-bottom: 20px;
+        margin-bottom: 8px;
         input {
             width: 24px;
             height: 24px;
@@ -4660,16 +4685,16 @@ display: none;
                 border: none;
                 padding: 0;
                 margin: 0;
-                width: 40px;
+                width: 25px;
                 height: 40px;
                 border: 1px solid rgba(113, 106, 108, 0.2);
             }
             button.quantity-arrow-minus {
-                background: transparent url(../img/png/minus.png) no-repeat 50% 50%;
+                background: transparent url(../img/png/minus.png) no-repeat 100% 50%;
                 border-right: none;
             }
             button.quantity-arrow-plus {
-                background: transparent url(../img/png/plus.png) no-repeat 50% 50%;
+                background: transparent url(../img/png/plus.png) no-repeat 0% 50%;
                 border-left: none;
             }
         }
@@ -4697,8 +4722,8 @@ display: none;
             }
         }
     }
-    &__pagination {
-        margin-top: 100px;
+    &__pagination { // блок изменён
+        margin-top: 26px;
         display: flex;
         justify-content: center;
         align-items: center;
