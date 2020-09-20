@@ -1618,7 +1618,7 @@
 
 @media screen and (max-width: 380px) {
   .box {
-    max-width: 320px;
+    max-width: 300px;
     width: 100%;
   }
   .advantages__box {
